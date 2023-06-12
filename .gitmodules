@@ -1,0 +1,3 @@
+[submodule "goose-game"]
+	path = goose-game
+	url = https://github.com/sRavioli/goose-game.git
