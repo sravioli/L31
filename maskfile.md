@@ -7,34 +7,62 @@
 > Will create a python virtual env and install the required dependencies.
 
 Creates a virtual environment, activates it, upgrades pip to the latest version
-and installs the required dependencies.
+and installs mkdocs plus its required dependencies.
 
 ```bash
-[[ $verbose ]] && echo "Creating python environment"
-python3 -m venv .venv
+mask msg info "attempt to create the python virtual environment"
+mask msg verbose "now running: 'python3 -m venv .venv'"
+python3 -m venv .venv > /dev/null && \
+  mask msg success "created python virtual environment"
 
-[[ $verbose ]] && echo "Activating python environment"
-source .venv/bin/activate
+mask msg info "attempt to activate python virtual environment"
+mask msg verbose "activating virtual env to install plugins"
+source .venv/bin/activate && mask msg success "python environment activated"
 
-[[ $verbose ]] && echo "Upgrading pip"
-python3 -m pip install --upgrade pip
+mask msg info "attempt to update pip"
+mask msg verbose "upgrading pip to ensure latest version is present in the env"
+python3 -m pip install --upgrade pip > /dev/null \
+  && mask msg success "upgraded pip"
 
-[[ $verbose ]] && echo "Installing required dependencies"
-pip install -r ./requirements.txt
+mask msg info "attempt to install mkdocs-material and site dependencies"
+mask msg verbose "installing mkdocs-material first"
+pip install mkdocs-material > /dev/null \
+    && mask msg success "installed mkdocs-material"
+
+mask msg verbose "now installing site dependencies"
+pip install mkdocs-git-revision-date-localized-plugin \
+    pillow \
+    cairosvg \
+    mkdocs-glightbox > /dev/null \
+    && mask msg success "installed dependencies"
 ```
 
 ```powershell
-if ($env:verbose) { Write-Output "Creating python environment" }
-python -m venv .venv
+mask msg info "attempt to create the python virtual environment"
+mask msg verbose "now running: 'python -m venv .venv'"
+python -m venv .venv > $null && `
+  mask msg success "created python virtual environment"
 
-if ($env:verbose) { Write-Output "Activating python environment" }
-./.venv/Scripts/activate
+mask msg info "attempt to activate python virtual environment"
+mask msg verbose "activating virtual env to install plugins"
+.\.venv\Scripts\activate && mask msg info "python environment activated"
 
-if ($env:verbose) { Write-Output "Upgrading pip" }
-python -m pip install --upgrade pip
+mask msg info "attempt to update pip"
+mask msg verbose "upgrading pip to ensure latest version is present in the env"
+python -m pip install --upgrade pip > $null `
+  && mask msg success "upgraded pip"
 
-if ($env:verbose) { Write-Output "Installing required dependencies" }
-pip install -r ./requirements.txt
+mask msg info "attempt to install mkdocs-material and site dependencies"
+mask msg verbose "installing mkdocs-material first"
+pip install mkdocs-material > $null `
+    && mask msg success "installed mkdocs-material"
+
+mask msg verbose "now installing site dependencies"
+pip install mkdocs-git-revision-date-localized-plugin `
+    pillow `
+    cairosvg `
+    mkdocs-glightbox > $null `
+    && mask msg success "installed dependencies"
 ```
 
 ## serve
@@ -48,27 +76,110 @@ pip install -r ./requirements.txt
   * desc: Serve site in dirty reload mode
 
 ```bash
-[[ $verbose ]] && echo "Activating python environment"
+clear && mask msg verbose "attempting to activate virtual environment"
 source .venv/bin/activate
-clear
 if [[ $dirty ]]; then
-  [[ $verbose ]] && echo "Running in dirtyreload mode..."
+  mask msg verbose "Running in dirtyreload mode..."
   mkdocs serve --dirtyreload
 else
-  [[ $verbose ]] && echo "Running..."
+  mask msg verbose "Running..."
   mkdocs serve
 fi
 ```
 
 ```powershell
-if ($env:verbose) { Write-Output "Activating python environment" }
-./venv/Scripts/activate
+Clear-Host && mask msg verbose "attempting to activate virtual environment"
+.\.venv\Scripts\activate
 if ($env:dirty) {
-  if ($env:verbose) { Write-Output "Running in dirtyreload mode..." }
-  Invoke-Expression -Command "mkdocs serve --dirtyreload"
+  mask msg verbose "Running in dirtyreload mode..."
+  mkdocs serve --dirtyreload
 } else {
-  if ($env:verbose) { Write-Output "Running..." }
-  Invoke-Expression -Command "mkdocs serve"
+  mask msg verbose "Running..."
+  mkdocs serve
+}
+```
+
+## build
+
+> Builds the site to the `./site/` directory.
+
+```bash
+mask msg verbose "attempt to activate python virtual environment"
+source .venv/bin/activate && mask msg verbose "python environment activated"
+
+if [[ $verbose ]]; then
+  mkdocs build --clean --no-directory-urls --verbose \
+    --config-file ./mkdocs.offline.yaml              \
+    --site-dir ./site/
+else 
+  mkdocs build --clean --no-directory-urls \
+    --config-file ./mkdocs.offline.yaml    \
+    --site-dir ./site/
+fi
+```
+
+```powershell
+mask msg verbose "attempt to activate python virtual environment"
+.\.venv\Scripts\activate && mask msg verbose "python environment activated"
+
+if ($env:verbose) {
+  mkdocs build --clean --no-directory-urls --verbose `
+    --config-file .\mkdocs.offline.yaml              `
+    --site-dir .\site\
+} else {
+  mkdocs build --clean --no-directory-urls `
+    --config-file .\mkdocs.offline.yaml    `
+    --site-dir .\site\
+}
+```
+
+## clean
+
+> Removes the `./.venv/` directory.
+
+**OPTIONS**
+
+* deep
+  * flags: -d --deep
+  * desc: Remove boh the ./site/ and ./.venv/ directories
+
+```bash
+mask msg verbose "attempt to delete ./.venv/ directory"
+if [[ -d "./.venv/" ]]; then
+  rm ./.venv/ --recursive --force \
+    && mask msg success "deleted ./.venv/ directory"
+else
+  mask msg success "directory ./.venv/ already deleted"
+fi
+
+if [[ $deep ]]; then
+  mask msg verbose "attempt to delete ./site/ directory"
+  if [[ -d "./site/" ]]; then
+    rm ./site/ --recursive --force \
+      && mask msg success "deleted ./site/ directory"
+  else
+    mask msg success "directory ./site/ already deleted"
+  fi
+fi
+```
+
+```powershell
+mask msg verbose "attempt to delete .\.venv\ directory"
+if (Test-Path ".\.venv\") {
+  Remove-Item .\.venv\ -Force -Recurse `
+    && mask msg success "deleted .\.venv\ directory"
+} else {
+  mask msg success "directory .\.venv\ already deleted"
+}
+
+if ($env:deep) {
+  mask msg verbose "attempt to delete .\site\ directory"
+  if (Test-Path ".\site\") {
+    Remove-Item .\.site\ -Force -Recurse `
+      && mask msg success "deleted .\site\ directory"
+  else {
+    mask msg success "directory .\site\ already deleted"
+  }
 }
 ```
 
@@ -77,19 +188,65 @@ if ($env:dirty) {
 > It will sort alphabetically the contents of `includes/glossary.md`.
 
 ```bash
-[[ $verbose ]] && echo "Sorting file contents"
+mask msg verbose "Sorting file contents"
 sort ./includes/glossary.md > ./includes/sorted.md
 
-[[ $verbose ]] && echo "Writing to file"
+mask msg verbose "Writing to file"
 mv --force ./includes/sorted.md ./includes/glossary.md
 ```
 
 ```powershell
-if ($env:verbose) { Write-Output "Sorting file contents" }
+mask msg verbose "Sorting file contents"
 Get-Content -Path ./includes/glossary.md `
     | Sort-Object `
     | Out-File -FilePath ./includes/sorted.md -Encoding UTF-8
 
-if ($env:verbose) { Write-Output "Writing to file" }
+mask msg verbose "Writing to file"
 Move-Item -Path ./includes/sorted.md -Destination ./includes/glossary.md -Force
+```
+
+## msg
+
+> Some helper tasks to make my life simpler.
+
+### info (msg)
+
+> Helper task to print out a simple informative message.
+
+Prints a formatted info string.
+
+```bash
+printf " \e[1;34m\e[0m  $msg\n";
+```
+
+```powershell
+Write-Output " \e[1;34m\e[0m  $env:msg\n";
+```
+
+### success (msg)
+
+> Helper task to print out a simple success message.
+
+Prints a formatted info string.
+
+```bash
+printf " \e[1;32m\e[0m  $msg\n";
+```
+
+```powershell
+Write-Output " \e[1;32m\e[0m  $env:msg";
+```
+
+### verbose (msg)
+
+> Helper task to print out a verbose message.
+
+Prints a formatted info string.
+
+```bash
+[[ $verbose ]] && printf "   $msg\n";
+```
+
+```powershell
+if ($env:verbose) { printf "   $env:msg\n" }
 ```
