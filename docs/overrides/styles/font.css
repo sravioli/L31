@@ -1,0 +1,9 @@
+@font-face {
+  font-family: "FiraCode NF";
+  src: url("../assets/fonts/FiraCodeNerdFont-Retina.ttf") format("truetype"),
+       url("../assets/fonts/FiraCodeNerdFontPropo-Retina.ttf") format("truetype");
+}
+
+:root {
+  --md-code-font: "FiraCode NF";
+}
