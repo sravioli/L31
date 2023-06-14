@@ -2,7 +2,7 @@
 
 > Useful tasks for the project
 
-## install
+## bootstrap
 
 > Will create a python virtual env and install the required dependencies.
 
@@ -10,25 +10,25 @@ Creates a virtual environment, activates it, upgrades pip to the latest version
 and installs the required dependencies.
 
 ```bash
-[[ "$verbose" == "true" ]] && echo "Creating python environment"
-python3 -m venv venv
+[[ $verbose ]] && echo "Creating python environment"
+python3 -m venv .venv
 
-[[ "$verbose" == "true" ]] && echo "Activating python environment"
-source venv/bin/activate
+[[ $verbose ]] && echo "Activating python environment"
+source .venv/bin/activate
 
-[[ "$verbose" == "true" ]] && echo "Upgrading pip"
+[[ $verbose ]] && echo "Upgrading pip"
 python3 -m pip install --upgrade pip
 
-[[ "$verbose" == "true" ]] && echo "Installing required dependencies"
+[[ $verbose ]] && echo "Installing required dependencies"
 pip install -r ./requirements.txt
 ```
 
-```pwsh
+```powershell
 if ($env:verbose) { Write-Output "Creating python environment" }
-python -m venv venv
+python -m venv .venv
 
 if ($env:verbose) { Write-Output "Activating python environment" }
-./venv/Scripts/activate
+./.venv/Scripts/activate
 
 if ($env:verbose) { Write-Output "Upgrading pip" }
 python -m pip install --upgrade pip
@@ -48,18 +48,19 @@ pip install -r ./requirements.txt
   * desc: Serve site in dirty reload mode
 
 ```bash
-[[ "$verbose" == "true" ]] && echo "Activating python environment"
-source venv/bin/activate
-if "$dirty" == "true"; then
-  [[ "$verbose" == "true" ]] && echo "Running in dirtyreload mode..."
+[[ $verbose ]] && echo "Activating python environment"
+source .venv/bin/activate
+clear
+if [[ $dirty ]]; then
+  [[ $verbose ]] && echo "Running in dirtyreload mode..."
   mkdocs serve --dirtyreload
 else
-  [[ "$verbose" == "true" ]] && echo "Running..."
+  [[ $verbose ]] && echo "Running..."
   mkdocs serve
 fi
 ```
 
-```pwsh
+```powershell
 if ($env:verbose) { Write-Output "Activating python environment" }
 ./venv/Scripts/activate
 if ($env:dirty) {
@@ -76,14 +77,14 @@ if ($env:dirty) {
 > It will sort alphabetically the contents of `includes/glossary.md`.
 
 ```bash
-[[ "$verbose" == "true" ]] && echo "Sorting file contents"
+[[ $verbose ]] && echo "Sorting file contents"
 sort ./includes/glossary.md > ./includes/sorted.md
 
-[[ "$verbose" == "true" ]] && echo "Writing to file"
+[[ $verbose ]] && echo "Writing to file"
 mv --force ./includes/sorted.md ./includes/glossary.md
 ```
 
-```pwsh
+```powershell
 if ($env:verbose) { Write-Output "Sorting file contents" }
 Get-Content -Path ./includes/glossary.md `
     | Sort-Object `
