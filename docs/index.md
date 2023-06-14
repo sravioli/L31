@@ -15,3 +15,18 @@ For full documentation visit [mkdocs.org](https://www.mkdocs.org).
     docs/
         index.md  # The documentation homepage.
         ...       # Other markdown pages, images and other files.
+
+check for nerdfont support
+
+```txt
+ assets/
+ docs/
+ goose-game/
+ includes/
+ cog.toml
+ LICENSE.txt
+ maskfile.md
+ mkdocs.yml
+ README.md
+ requirements.txt
+```
