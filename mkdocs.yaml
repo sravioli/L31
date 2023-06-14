@@ -1,0 +1,191 @@
+---
+# yamllint disable-line
+# yaml-language-server: $schema=https://squidfunk.github.io/mkdocs-material/schema.json
+
+# project information
+site_name: Appunti di Informatica
+site_url: https://sravioli.github.io/L31
+site_author: Simone Fidanza
+site_description: >-
+  Raccolta di appunti, file, slides, etc. relativi al corso di Informatica L31,
+  dell'Università di Bari "Aldo Moro".
+
+# repository
+repo_name: sRavioli/L31
+repo_url: https://github.com/sRavioli/L31
+
+# copyright
+copyright: Copyright &copy; Simone Fidanza – GNU-GPLv3
+
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+
+  font:
+    text: Quicksand
+    code: Fira Code
+
+  language: it
+  direction: ltr
+
+  favicon: overrides/assets/images/favicon.png
+
+  icon:
+    logo: fontawesome/solid/terminal
+    repo: fontawesome/brands/git
+    edit: material/file-edit-outline
+
+  palette:
+    # toggle to dark mode
+    - media: '(prefers-color-scheme: dark)'
+      scheme: slate
+      primary: black
+      accent: green
+      toggle:
+        icon: material/weather-sunny
+        name: switch to light mode
+
+    # toggle to light mode
+    - media: '(prefers-color-scheme: light)'
+      scheme: default
+      primary: black
+      accent: green
+      toggle:
+        icon: material/weather-night
+        name: switch to dark mode
+
+  features:
+    - navigation.instant  # basically behave like a single page app
+    - navigation.tracking  # URL gets updated when highlighting anchor
+    - navigation.tabs  # tabs rendered below header
+    - navigation.tabs.sticky  # tabs are sticky
+    # - navigation.sections  # sections are rendered as groups in the navigation
+    # - toc.integrate  # integrate the table of contents into the page
+    - toc.follow  # sidebar gets scrolled so that active anchor is visible
+    - navigation.top  # back to top button
+    - navigation.footer  # footer nav is now opt-in
+    - search.suggest  # search suggestions
+    - search.share  # deep link to the current search query and result
+    - header.autohide  # hide header when scrolling down
+    - content.action.edit  # edit is now opt-in
+    - content.action.view  # view source is now opt-in
+    - content.code.copy
+
+plugins:
+  # multilingual search engine
+  - search:
+      lang: [it, en]
+
+  # implement date of creation and last edit
+  - git-revision-date-localized:
+      type: date
+      enable_creation_date: true
+      fallback_to_build_date: true
+
+  # zoom and move images
+  - glightbox:
+      touchNavigation: true
+      loop: false
+      effect: zoom
+      slide_effect: slide
+      width: 100%
+      height: auto
+      zoomable: true
+      draggable: true
+      auto_caption: false
+      caption_position: bottom
+
+markdown_extensions:
+  # Python Markdown
+  - abbr  # add small tooltip to element
+  - admonition  # add call-outs blocks !!! class, ??? class
+  - attr_list  # add HTML attributes to CSS classes
+  - def_list  # add definition lists (dl in HTML)
+  - footnotes  # add footnotes
+  - md_in_html  # allow Markdown inside HTML blocks
+
+  # auto-generate TOC
+  - toc:
+      permalink: ⚓︎  # change permalink symbol
+      permalink_title: Link permanente
+      toc_depth: 5
+
+  # Python Markdown Extensions
+  # render LaTeX math
+  - pymdownx.arithmatex:
+      generic: true
+
+  # improve markup detection
+  - pymdownx.betterem:
+      smart_enable: all
+
+  # highlight text and define sub/sup-scripts
+  - pymdownx.mark  # ^^mark^^ ==insert== ~~delete~~
+  - pymdownx.caret  # ^superscript^
+  - pymdownx.tilde  # ~subscript~
+
+  # supercharge admonition making them collapsible (??? ???+)
+  - pymdownx.details
+
+  # keyboard keys
+  - pymdownx.keys  # ++key+key++
+
+  # highlight inline code
+  - pymdownx.inlinehilite
+
+  # adds support for syntax highlighting of code blocks and inline code
+  - pymdownx.highlight:
+      use_pygments: true
+      auto_title: true
+      linenums: true
+      linenums_style: table
+      anchor_linenums: true
+
+  # allows for arbitrary nesting of code and content blocks
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+
+  # convert some sequences of characters into symbols
+  - pymdownx.smartsymbols
+
+  # Embed content from arbitrary files
+  - pymdownx.snippets:
+      base_path:
+        - .
+        - ./docs/Anno_I/Laboratorio_di_Informatica/code/22-03-2023/
+      auto_append: [includes/glossary.md]
+
+  - pymdownx.tabbed:
+      alternate_style: true
+
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+  # add emoji support
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+
+extra:
+  generator: true  # display "Made with Material for MkDocs"
+  homepage: https://sravioli.github.io/L31/
+  social:
+    - icon: fontawesome/solid/paper-plane
+      link: mailto:<fsimone2002@proton.me>
+      name: Mandami una mail
+    - icon: fontawesome/brands/github
+      link: https://github.com/sRavioli
+    - icon: fontawesome/brands/instagram
+      link: https://www.instagram.com/who.dat.boy___
+
+extra_css: [overrides/styles/font.css]
+
+extra_javascript:
+  - overrides/javascripts/mappings.js
+  - overrides/javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
