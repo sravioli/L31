@@ -40,8 +40,8 @@ pip install mkdocs-git-revision-date-localized-plugin \
 ```powershell
 mask msg info "attempt to create the python virtual environment"
 mask msg verbose "now running: 'python -m venv .venv'"
-python -m venv .venv > $null && `
-  mask msg success "created python virtual environment"
+python -m venv .venv > $null
+mask msg success "created python virtual environment"
 
 mask msg info "attempt to activate python virtual environment"
 mask msg verbose "activating virtual env to install plugins"
@@ -49,20 +49,20 @@ mask msg verbose "activating virtual env to install plugins"
 
 mask msg info "attempt to update pip"
 mask msg verbose "upgrading pip to ensure latest version is present in the env"
-python -m pip install --upgrade pip > $null `
-  && mask msg success "upgraded pip"
+python -m pip install --upgrade pip > $null
+mask msg success "upgraded pip"
 
 mask msg info "attempt to install mkdocs-material and site dependencies"
 mask msg verbose "installing mkdocs-material first"
-pip install mkdocs-material > $null `
-    && mask msg success "installed mkdocs-material"
+pip install mkdocs-material > $null
+mask msg success "installed mkdocs-material"
 
 mask msg verbose "now installing site dependencies"
 pip install mkdocs-git-revision-date-localized-plugin `
     pillow `
     cairosvg `
-    mkdocs-glightbox > $null `
-    && mask msg success "installed dependencies"
+    mkdocs-glightbox > $null
+mask msg success "installed dependencies"
 ```
 
 ## serve
@@ -166,8 +166,8 @@ fi
 ```powershell
 mask msg verbose "attempt to delete .\.venv\ directory"
 if (Test-Path ".\.venv\") {
-  Remove-Item .\.venv\ -Force -Recurse `
-    && mask msg success "deleted .\.venv\ directory"
+  Remove-Item .\.venv\ -Force -Recurse
+  mask msg success "deleted .\.venv\ directory"
 } else {
   mask msg success "directory .\.venv\ already deleted"
 }
@@ -175,9 +175,9 @@ if (Test-Path ".\.venv\") {
 if ($env:deep) {
   mask msg verbose "attempt to delete .\site\ directory"
   if (Test-Path ".\site\") {
-    Remove-Item .\.site\ -Force -Recurse `
-      && mask msg success "deleted .\site\ directory"
-  else {
+    Remove-Item .\.site\ -Force -Recurse
+    mask msg success "deleted .\site\ directory"
+  } else {
     mask msg success "directory .\site\ already deleted"
   }
 }
@@ -220,7 +220,8 @@ printf " \e[1;34m\e[0m  $msg\n";
 ```
 
 ```powershell
-Write-Output " \e[1;34m\e[0m  $env:msg\n";
+Write-Host "    " -ForegroundColor blue -NoNewline
+Write-Host $env:msg
 ```
 
 ### success (msg)
@@ -234,7 +235,8 @@ printf " \e[1;32m\e[0m  $msg\n";
 ```
 
 ```powershell
-Write-Output " \e[1;32m\e[0m  $env:msg";
+Write-Host "   " -ForegroundColor green -NoNewline
+Write-Host $env:msg
 ```
 
 ### verbose (msg)
@@ -248,5 +250,5 @@ Prints a formatted info string.
 ```
 
 ```powershell
-if ($env:verbose) { printf "   $env:msg\n" }
+if ($env:verbose) { Write-Host "   $env:msg" }
 ```
