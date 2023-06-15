@@ -1,0 +1,15 @@
+---
+# yamllint disable-line
+# yaml-language-server: $schema=https://raw.githubusercontent.com/DavidAnson/markdownlint/main/schema/markdownlint-config-schema.json
+
+default: true
+
+# MD046/code-block-style - Code block style
+MD046:
+  # Block style
+  style: fenced
+
+# MD048/code-fence-style - Code fence style
+MD048:
+  # Code fence style
+  style: backtick
