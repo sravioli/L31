@@ -155,9 +155,7 @@ markdown_extensions:
 
   # Embed content from arbitrary files
   - pymdownx.snippets:
-      base_path:
-        - .
-        - ./docs/Anno_I/Laboratorio_di_Informatica/code/22-03-2023/
+      base_path: [.]
       auto_append: [includes/glossary.md]
 
   - pymdownx.tabbed:
@@ -183,7 +181,7 @@ extra:
     - icon: fontawesome/brands/instagram
       link: https://www.instagram.com/who.dat.boy___
 
-extra_css: [overrides/styles/font.css]
+extra_css: [overrides/styles/font.css, overrides/styles/syntax.css]
 
 extra_javascript:
   - overrides/javascripts/mappings.js
