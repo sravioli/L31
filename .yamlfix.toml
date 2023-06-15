@@ -2,7 +2,7 @@
 #
 # All fields configured in the [YamlfixConfig][1] class can be provided through 
 # the means mentioned in Configuration. Here are the currently available 
-#configuration options with short examples on their impact to provided 
+# configuration options with short examples on their impact to provided 
 # yaml-files.
 # 
 # [1]: https://lyz-code.github.io/yamlfix/reference/#yamlfix.model.YamlfixConfig
