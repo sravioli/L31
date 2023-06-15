@@ -33,7 +33,7 @@ jobs:
           restore-keys: |
             mkdocs-material-
 
-      - name: Upgrade python
+      - name: Upgrade pip
         run: >-
           python -m pip install --upgrade pip
 
