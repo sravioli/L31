@@ -1,4 +1,5 @@
-﻿*[ASCII]: American Standard Code for Information Interchange
+﻿<!-- markdownlint-disable -->
+*[ASCII]: American Standard Code for Information Interchange
 *[BIT]: Binary Digit
 *[CISC]: Complex Instruction Set Computer
 *[CNF]: Conjunctive Normal Form
