@@ -1,0 +1,17 @@
+:root {
+  --md-code-hl-number-color: "#d27e99";
+  --md-code-hl-special-color: "#7fb4ca";
+  --md-code-hl-function-color: "#7e9cd8";
+  --md-code-hl-constant-color: "#d8616b";
+  --md-code-hl-keyword-color: "#9c86bf";
+  --md-code-hl-string-color: "#98bb6c";
+  --md-code-hl-name-color: "#c8c3a6";
+  --md-code-hl-operator-color: "#C8C093";
+  --md-code-hl-punctuation-color: "#d8616b";
+  --md-code-hl-comment-color: "#4c4c55";
+  --md-code-hl-generic-color: "#C8C093";
+  --md-code-hl-variable-color: "#c8c3a6";
+
+  --md-code-fg-color: "#c8c3a6";
+  --md-code-bg-color: "#1F1F28";
+}
