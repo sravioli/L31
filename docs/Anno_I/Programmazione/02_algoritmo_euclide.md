@@ -2,7 +2,7 @@
 
 L'algoritmo di Euclide è un algoritmo per calcolare il massimo comun divisore
 di due numeri interi positivi. Dunque, dati due numeri interi \(a, b\) calcolare
-$\lcm(a, b)$.
+$\mcd(a, b)$.
 
 **Input**
 : \(a, b\) – coppia di numeri interi maggiori di zero
@@ -38,10 +38,10 @@ $a$ sia diverso da \(b\). Si può utilizzare una iterazione a condizione inizial
 Dunque:
 
 ```txt title="Algoritmo di Euclide"
-MENTRE (𝑎 ≠ 𝑏)
-    SE (𝑎 > 𝑏)
-        ALLORA assegna ad 𝑎 il valore di 𝑎 - 𝑏
-        ALTRIMENTI assegna ad 𝑏 il valore di 𝑏 - 𝑎
+MENTRE (a != b)
+    SE (a > b)
+        ALLORA assegna ad a il valore di a - b
+        ALTRIMENTI assegna ad b il valore di b - a
     FINE
 FINE
 ```
