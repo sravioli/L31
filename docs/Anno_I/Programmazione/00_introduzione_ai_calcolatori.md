@@ -15,7 +15,7 @@ Senza Hardware il Software è inutile e viceversa. Questi si completano.
 
 ## Software
 
-I Software sono di due tipi
+Vi sono due tipi di software
 
 **Software di base**
 : Funzionale all'utilizzo dell'elaboratore e di tutte le sue periferiche, questo
@@ -40,7 +40,7 @@ I componenti fondamentali dell'architettura dei calcolatori sono:
   e le esegue, dunque legge e/o scrive dati dalla memoria;
 - Memoria principale (RAM, ROM) che contiene i dati e le istruzioni dei
   programmi;
-- Memoria secondaria o di massa (HD, CD, DVD, ecc.) per memorizzare dati e
+- Memoria secondaria o di massa (HDD, CD, DVD, ecc.) per memorizzare dati e
   programmi in maniera permanente;
 - Dispositivi di input (tastiera, mouse, touch pad, ecc.) per l’inserimento dei
   dati;
@@ -56,7 +56,7 @@ flowchart LR
 
   subgraph CPU
     %% alu co; -->
-    co[Control Unit ] <--> alu[ALU ];
+    co[Control Unit] <--> alu[ALU];
   end
 ```
 
@@ -79,10 +79,10 @@ delle caratteristiche specifiche:
 - È possibile scrivere nella cella per cambiarne lo stato;
 - È possibile leggere lo stato della cella.
 
-La cella di memoria da sola non è molto utile ed è per questo motivo che vengono
-organizzate in _locazioni di memoria_ da \(8\), \(16\) o anche più celle. Lavorando
-con questi dati si ha a che fare con \(8\), \(16\), etc. byte. La singola cella
-viene chiamata bit, dunque una cella equivale a \(1\) bit.
+La cella di memoria da sola non è molto utile ed è per questo motivo che
+vengono organizzate in _locazioni di memoria_ da \(8\), \(16\) o anche più celle.
+Lavorando con questi dati si ha a che fare con \(8\), \(16\), etc. byte. La
+singola cella viene chiamata bit, dunque una cella equivale a \(1\bbit\).
 Ogni locazione di memoria è individuata da un indirizzo univoco che permette di
 specificarne la posizione. Lavorando con le locazioni di memoria si lavora
 indirettamente anche con questo indirizzo.
@@ -91,8 +91,9 @@ indirettamente anche con questo indirizzo.
 
 La ROM è una memoria a **sola lettura** e contiene delle informazioni permanenti
 e non modificabili.
-Spesso utilizzata per memorizzare istruzioni di sistema, ad esempio le istruzioni
-necessarie per avviare il sistema operativo e per il riconoscimento delle periferiche.
+Spesso utilizzata per memorizzare istruzioni di sistema, ad esempio le
+istruzioni necessarie per avviare il sistema operativo e per il riconoscimento
+delle periferiche.
 
 ### Memoria di Massa
 
@@ -112,12 +113,10 @@ le stringhe di \(0\) e \(1\) in caratteri.
 
 Con il codice ASCII si hanno a disposizione \(256\) simboli distinti
 
-!!!fig.!!!
-
 I primi \(32\) simboli sono caratteri di controllo e hanno codici che vanno da
 \(0\) a \(31\), sempre sotto forma di \(0\) e \(1\). I simboli sono \(256\) poiché
 con \(8\) bit è possibile rappresentare da \(0\) a \(255\) combinazioni differenti.
-Inizialmente il codice ASCII utilizzava \(7\) bit, in seguito l'ASCII esteso porta
+Inizialmente il codice ASCII utilizzava \(7\bbit\), in seguito l'ASCII esteso porta
 il numero di bit a \(8\).
 
 ## Sistemi di numerazione
