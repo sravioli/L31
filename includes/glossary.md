@@ -1,11 +1,14 @@
-﻿<!-- markdownlint-disable -->
+*[ALU]: Arithmetic Logic Unit
 *[ASCII]: American Standard Code for Information Interchange
 *[BIT]: Binary Digit
+*[CD]: Compact Disc
 *[CISC]: Complex Instruction Set Computer
 *[CNF]: Conjunctive Normal Form
 *[DMA]: Direct Memory Access
 *[DNF]: Disjunctive Normal Form
+*[DVD]: Digital Versatile Disc (prima Digital Video Disc)
 *[FIFO]: First In, First Out
+*[HDD]: Hard Disk Drive
 *[IEEE]: Institute of Electrical and Electronics Engineers
 *[ISA]: Instruction Set Architecture
 *[LRU]: Least Recently Used
@@ -18,6 +21,7 @@
 *[RISC]: Reduced Instruction Set Computer
 *[RLTDP]: Registro Limite della Tabella di Descrizione delle Partizioni
 *[RLTDS]: Registro Limite della Tabella dei Descrittori di Segmento
+*[ROM]: Read-Only Memory
 *[TDD]: Test Driven Development
 *[TDF]: Tabella di Descrizione del File
 *[TDM]: Tabella Di Memoria
