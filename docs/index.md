@@ -44,7 +44,7 @@ Per contribuire:
     <!-- markdownlint-enable code-block-style -->
 
 2. recarsi nella cartella (`#!bash cd L31`) e installare i pacchetti python
-   richiesti (richiesti: pyton e [mask][mask]):
+   richiesti (richiesti: python e [mask][mask]):
 
     ```bash linenums="0" title=""
     mask bootstrap
