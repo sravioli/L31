@@ -1003,7 +1003,7 @@
 </dl>
 <p>Senza Hardware il Software è inutile e viceversa. Questi si completano.</p>
 <h2 id="software">Software<a class="headerlink" href="#software" title="Link permanente">⚓︎</a></h2>
-<p>I Software sono di due tipi</p>
+<p>Vi sono due tipi di software</p>
 <dl>
 <dt><strong>Software di base</strong></dt>
 <dd>Funzionale all'utilizzo dell'elaboratore e di tutte le sue periferiche, questo
@@ -1022,9 +1022,9 @@ impostare la macchina al meglio è fondamentale.</p>
 <ul>
 <li>Unità centrale di elaborazione (CPU) che preleva le istruzioni dalla memoria
   e le esegue, dunque legge e/o scrive dati dalla memoria;</li>
-<li>Memoria principale (<abbr title="Random Access Memory">RAM</abbr>, ROM) che contiene i dati e le istruzioni dei
+<li>Memoria principale (<abbr title="Random Access Memory">RAM</abbr>, <abbr title="Read-Only Memory">ROM</abbr>) che contiene i dati e le istruzioni dei
   programmi;</li>
-<li>Memoria secondaria o di massa (HD, CD, DVD, ecc.) per memorizzare dati e
+<li>Memoria secondaria o di massa (<abbr title="Hard Disk Drive">HDD</abbr>, <abbr title="Compact Disc">CD</abbr>, <abbr title="Digital Versatile Disc (prima Digital Video Disc)">DVD</abbr>, ecc.) per memorizzare dati e
   programmi in maniera permanente;</li>
 <li>Dispositivi di input (tastiera, mouse, touch pad, ecc.) per l’inserimento dei
   dati;</li>
@@ -1038,12 +1038,12 @@ impostare la macchina al meglio è fondamentale.</p>
 
   subgraph CPU
     %% alu co; --&gt;
-    co[Control Unit ] &lt;--&gt; alu[ALU ];
+    co[Control Unit] &lt;--&gt; alu[ALU];
   end</code></pre>
-<p>Dove ALU sta per Unità Logica Aritmetica.</p>
+<p>Dove <abbr title="Arithmetic Logic Unit">ALU</abbr> sta per Unità Logica Aritmetica.</p>
 <h2 id="memoria">Memoria<a class="headerlink" href="#memoria" title="Link permanente">⚓︎</a></h2>
 <p>Vi sono due tipi di memoria: memoria principale, chiamata <abbr title="Random Access Memory">RAM</abbr> (Random Access
-Memory) e la memoria ROM (Read Only Memory).</p>
+Memory) e la memoria <abbr title="Read-Only Memory">ROM</abbr> (Read Only Memory).</p>
 <h3 id="memoria-principale-ram">Memoria Principale (<abbr title="Random Access Memory">RAM</abbr>)<a class="headerlink" href="#memoria-principale-ram" title="Link permanente">⚓︎</a></h3>
 <p>La memoria principale contiene i dati e le istruzioni che il processore deve
 elaborare. Se lo spazio della <abbr title="Random Access Memory">RAM</abbr> è esaurito, il programma verrà eseguito molto
@@ -1055,18 +1055,19 @@ delle caratteristiche specifiche:</p>
 <li>È possibile scrivere nella cella per cambiarne lo stato;</li>
 <li>È possibile leggere lo stato della cella.</li>
 </ul>
-<p>La cella di memoria da sola non è molto utile ed è per questo motivo che vengono
-organizzate in <em>locazioni di memoria</em> da <span class="arithmatex">\(8\)</span>, <span class="arithmatex">\(16\)</span> o anche più celle. Lavorando
-con questi dati si ha a che fare con <span class="arithmatex">\(8\)</span>, <span class="arithmatex">\(16\)</span>, etc. byte. La singola cella
-viene chiamata bit, dunque una cella equivale a <span class="arithmatex">\(1\)</span> bit.
+<p>La cella di memoria da sola non è molto utile ed è per questo motivo che
+vengono organizzate in <em>locazioni di memoria</em> da <span class="arithmatex">\(8\)</span>, <span class="arithmatex">\(16\)</span> o anche più celle.
+Lavorando con questi dati si ha a che fare con <span class="arithmatex">\(8\)</span>, <span class="arithmatex">\(16\)</span>, etc. byte. La
+singola cella viene chiamata bit, dunque una cella equivale a <span class="arithmatex">\(1\bbit\)</span>.
 Ogni locazione di memoria è individuata da un indirizzo univoco che permette di
 specificarne la posizione. Lavorando con le locazioni di memoria si lavora
 indirettamente anche con questo indirizzo.</p>
-<h3 id="memoria-rom">Memoria ROM<a class="headerlink" href="#memoria-rom" title="Link permanente">⚓︎</a></h3>
-<p>La ROM è una memoria a <strong>sola lettura</strong> e contiene delle informazioni permanenti
+<h3 id="memoria-rom">Memoria <abbr title="Read-Only Memory">ROM</abbr><a class="headerlink" href="#memoria-rom" title="Link permanente">⚓︎</a></h3>
+<p>La <abbr title="Read-Only Memory">ROM</abbr> è una memoria a <strong>sola lettura</strong> e contiene delle informazioni permanenti
 e non modificabili.
-Spesso utilizzata per memorizzare istruzioni di sistema, ad esempio le istruzioni
-necessarie per avviare il sistema operativo e per il riconoscimento delle periferiche.</p>
+Spesso utilizzata per memorizzare istruzioni di sistema, ad esempio le
+istruzioni necessarie per avviare il sistema operativo e per il riconoscimento
+delle periferiche.</p>
 <h3 id="memoria-di-massa">Memoria di Massa<a class="headerlink" href="#memoria-di-massa" title="Link permanente">⚓︎</a></h3>
 <p>Detta anche memoria secondaria, viene utilizzata per memorizzare grandi volumi
 di dati in modo persistente.</p>
@@ -1078,11 +1079,10 @@ segni di punteggiatura, altri simboli stampabili e caratteri di controllo.</p>
 <p>Questi codici di caratteri servono alla macchina per capire come interpretare
 le stringhe di <span class="arithmatex">\(0\)</span> e <span class="arithmatex">\(1\)</span> in caratteri.</p>
 <p>Con il codice <abbr title="American Standard Code for Information Interchange">ASCII</abbr> si hanno a disposizione <span class="arithmatex">\(256\)</span> simboli distinti</p>
-<p>!!!fig.!!!</p>
 <p>I primi <span class="arithmatex">\(32\)</span> simboli sono caratteri di controllo e hanno codici che vanno da
 <span class="arithmatex">\(0\)</span> a <span class="arithmatex">\(31\)</span>, sempre sotto forma di <span class="arithmatex">\(0\)</span> e <span class="arithmatex">\(1\)</span>. I simboli sono <span class="arithmatex">\(256\)</span> poiché
 con <span class="arithmatex">\(8\)</span> bit è possibile rappresentare da <span class="arithmatex">\(0\)</span> a <span class="arithmatex">\(255\)</span> combinazioni differenti.
-Inizialmente il codice <abbr title="American Standard Code for Information Interchange">ASCII</abbr> utilizzava <span class="arithmatex">\(7\)</span> bit, in seguito l'<abbr title="American Standard Code for Information Interchange">ASCII</abbr> esteso porta
+Inizialmente il codice <abbr title="American Standard Code for Information Interchange">ASCII</abbr> utilizzava <span class="arithmatex">\(7\bbit\)</span>, in seguito l'<abbr title="American Standard Code for Information Interchange">ASCII</abbr> esteso porta
 il numero di bit a <span class="arithmatex">\(8\)</span>.</p>
 <h2 id="sistemi-di-numerazione">Sistemi di numerazione<a class="headerlink" href="#sistemi-di-numerazione" title="Link permanente">⚓︎</a></h2>
 <p>È un insieme di simboli (cifre) e regole che assegnano ad ogni sequenza di cifre
@@ -1150,14 +1150,12 @@ delle divisioni vengono riportati in ordine inverso.</p>
 </div>
 <!-- markdownlint-enable MD046 -->
 
-<p>﻿<!-- markdownlint-disable --></p>
-
   <hr>
 <div class="md-source-file">
   <small>
     
       Ultimo aggiornamento:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">June 15, 2023</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">June 16, 2023</span>
       
         <br>
         Creata:

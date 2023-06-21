@@ -804,7 +804,7 @@
 <h1 id="algoritmo-di-euclide">Algoritmo di Euclide<a class="headerlink" href="#algoritmo-di-euclide" title="Link permanente">⚓︎</a></h1>
 <p>L'algoritmo di Euclide è un algoritmo per calcolare il massimo comun divisore
 di due numeri interi positivi. Dunque, dati due numeri interi <span class="arithmatex">\(a, b\)</span> calcolare
-<span class="arithmatex">\(\lcm(a, b)\)</span>.</p>
+<span class="arithmatex">\(\mcd(a, b)\)</span>.</p>
 <dl>
 <dt><strong>Input</strong></dt>
 <dd><span class="arithmatex">\(a, b\)</span> – coppia di numeri interi maggiori di zero</dd>
@@ -837,10 +837,10 @@ tante differenze in modo da riportarsi al caso <span class="arithmatex">\(a = b\
 <span class="normal"><a href="#__codelineno-0-3">3</a></span>
 <span class="normal"><a href="#__codelineno-0-4">4</a></span>
 <span class="normal"><a href="#__codelineno-0-5">5</a></span>
-<span class="normal"><a href="#__codelineno-0-6">6</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a>MENTRE (𝑎 ≠ 𝑏)
-<a id="__codelineno-0-2" name="__codelineno-0-2"></a>    SE (𝑎 &gt; 𝑏)
-<a id="__codelineno-0-3" name="__codelineno-0-3"></a>        ALLORA assegna ad 𝑎 il valore di 𝑎 - 𝑏
-<a id="__codelineno-0-4" name="__codelineno-0-4"></a>        ALTRIMENTI assegna ad 𝑏 il valore di 𝑏 - 𝑎
+<span class="normal"><a href="#__codelineno-0-6">6</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a>MENTRE (a != b)
+<a id="__codelineno-0-2" name="__codelineno-0-2"></a>    SE (a &gt; b)
+<a id="__codelineno-0-3" name="__codelineno-0-3"></a>        ALLORA assegna ad a il valore di a - b
+<a id="__codelineno-0-4" name="__codelineno-0-4"></a>        ALTRIMENTI assegna ad b il valore di b - a
 <a id="__codelineno-0-5" name="__codelineno-0-5"></a>    FINE
 <a id="__codelineno-0-6" name="__codelineno-0-6"></a>FINE
 </code></pre></div></td></tr></table></div>
@@ -862,14 +862,13 @@ condizione è vera, allora viene eseguito il blocco <code>ALLORA</code> e il blo
 <code>ALTRIMENTI</code> viene ignorato. Se la condizione è falsa, allora viene eseguito il
 blocco <code>ALTRIMENTI</code> e il blocco <code>ALLORA</code> viene ignorato. Il blocco <code>SE</code> può
 essere utilizzato anche senza il blocco <code>ALTRIMENTI</code>.</p>
-<p>﻿<!-- markdownlint-disable --></p>
 
   <hr>
 <div class="md-source-file">
   <small>
     
       Ultimo aggiornamento:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">June 15, 2023</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">June 16, 2023</span>
       
         <br>
         Creata:
