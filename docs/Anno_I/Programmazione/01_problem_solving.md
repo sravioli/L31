@@ -102,6 +102,7 @@ tipo di dato[^1] e vincoli, in questo preciso ordine.
 Il nome del dato è arbitrario, però è necessario che sia rappresentativo del dato
 stesso. È possibile utilizzare lettere singole, anche se non è consigliabile[^2].
 
+<!-- markdownlint-disable MD046 -->
 !!! example
 
     Ad esempio, nel convertire un numero da binario a decimale, scriveremo:
@@ -109,6 +110,8 @@ stesso. È possibile utilizzare lettere singole, anche se non è consigliabile[^
     ❌ numero binario, numero binario
 
     ✔️ numero binario, numero binario da convertire a decimale
+
+<!-- markdownlint-enable MD046 -->
 
 In generale, la descrizione del dato deve essere più dettagliata possibile e più
 lunga del nome del dato. Dopo aver scritto la descrizione è consigliabile

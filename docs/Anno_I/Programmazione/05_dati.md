@@ -3,10 +3,13 @@
 I dati rappresentano oggetti e proprietà della realtà rilevanti per il problema
 in esame. I dati sono un'astrazione degli oggetti del mondo reale, nel senso che:
 
+<!-- markdownlint-disable MD046 -->
 !!! quote "N. Wirth, Algoritmi e strutture dati"
 
     Alcune proprietà e caratteristiche degli oggetti in esame vengono ignorate
     perché sono irrilevanti e marginali per il particolare problema considerato
+
+<!-- markdownlint-enable MD046 -->
 
 <!-- Il concetto di dati è estremamente importante in informatica, in quanto l'intero
 processo di progettazione di un programma è incentrato sulla gestione dei dati.
@@ -33,10 +36,13 @@ nascita, luogo di nascita, residenza, sesso, reddito, etc.
 All'anagrafe, invece, risultano essere utili tutti i dati che riguardano le
 caratteristiche fisiche dello studente, in pratica l'opposto dell'algoritmo.
 
+<!-- markdownlint-disable MD046 -->
 !!! info "Informazioni"
 
     A seconda della situazione, l'oggetto viene descritto (con dei dati), in modo
     diverso.
+
+<!-- markdownlint-enable MD046 -->
 
 ## Dati semplici
 
@@ -52,6 +58,7 @@ o atomiche non decomponibili. Ad esempio:
 I dati strutturati rappresentano oggetti, entità, proprietà più complesse,
 decomponibili in dati elementari. Essi sono aggregati di dati semplici.
 
+<!-- markdownlint-disable MD046 -->
 !!! example "Esempio"
 
     === "Studente"
@@ -89,6 +96,8 @@ decomponibili in dati elementari. Essi sono aggregati di dati semplici.
                 Stato civile;
                 Residenza.
         ```
+
+<!-- markdownlint-enable MD046 -->
 
 I dati strutturati possono a loro volta essere descritti con altri dati strutturati.
 
