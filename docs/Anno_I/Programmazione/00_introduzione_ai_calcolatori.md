@@ -55,7 +55,6 @@ flowchart LR
   CPU --> out[Output];
 
   subgraph CPU
-    %% alu co; -->
     co[Control Unit] <--> alu[ALU];
   end
 ```

@@ -2,13 +2,14 @@
 
 L'algoritmo di Euclide è un algoritmo per calcolare il massimo comun divisore
 di due numeri interi positivi. Dunque, dati due numeri interi \(a, b\) calcolare
-$\mcd(a, b)$.
+\(\mcd(a, b)\).
 
 **Input**
 : \(a, b\) – coppia di numeri interi maggiori di zero
 
 **Output**
-: \(\mcd{}\) – massimo comun divisore di \(a\) e \(b\), numero intero maggiore di zero
+: \(\mcd{}\) – massimo comun divisore di \(a\) e \(b\), numero intero maggiore  
+  di zero
 
 L'algoritmo di Euclide si basa sulle seguenti proprietà:
 
@@ -33,7 +34,7 @@ o quando ripetere un'operazione.
 Poiché valgono le proprietà precedenti, nel caso generale si possono calcolare
 tante differenze in modo da riportarsi al caso \(a = b\), per il quale il problema
 è risolto. Il calcolo delle differenze deve essere ripetuto se risulta vero che
-$a$ sia diverso da \(b\). Si può utilizzare una iterazione a condizione iniziale.
+\(a\) sia diverso da \(b\). Si può utilizzare una iterazione a condizione iniziale.
 
 Dunque:
 
