@@ -82,10 +82,22 @@ Per contribuire:
 
 6. recarsi su :material-github: GitHub e aprire una pull request.
 
+## Keymaps
+
+Il sito possiede della mappature dei tasti personalizzate:
+
+- ++h++ e ++l++ – naviga verso la pagina precedente e verso la successiva (se)
+  esistono);
+- ++k++ e ++j++ – scorri verso l'alto e verso il basso;
+- ++g++ e ++shift+g++ – scorri verso l'inizio e verso la fine della pagina;
+- ++shift+k++ e ++shift+j++ – naviga verso l'intestazione precedente e verso
+  l'intestazione successiva;
+- ++shift+h++ – torna alla pagina principale.
+
 [mask]: https://github.com/jacobdeichert/mask#installation
 
 [^manual-install]:
     Nel caso in cui non sia possibile usare [mask][mask], è possibile eseguire
     manualmente i due script. Bisogna aprire il file `maskfile.md`, e recarsi
     nelle sezioni `## bootstrap` e `## build` e eseguire i comandi lì presenti,
-    esclusi i messaggi (`#!bash mask msk ... "..."`).
+    esclusi i messaggi (`#!bash mask msg ... "..."`).
