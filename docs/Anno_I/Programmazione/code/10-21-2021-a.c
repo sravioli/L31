@@ -18,8 +18,8 @@ void printMult(int n, int k);
  * Richiede due numeri e calcola i primi n multipli di k
  */
 int main(void) {
-  int n; // numero di multipli da calcolare
-  int k; // numero di cui calcolare i multipli
+  int n;  // numero di multipli da calcolare
+  int k;  // numero di cui calcolare i multipli
 
   // leggo n
   n = getNaturalNum(&n);

@@ -17,8 +17,8 @@ int getNaturalNum(int *num);
 void isDivisible(int n, int k);
 
 int main(void) {
-  int n; // numero da verificare
-  int k; // numero per cui verificare la divisibilità
+  int n;  // numero da verificare
+  int k;  // numero per cui verificare la divisibilità
 
   // leggo n
   n = getNaturalNum(&n);

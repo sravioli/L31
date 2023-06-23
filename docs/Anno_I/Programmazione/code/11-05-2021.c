@@ -23,23 +23,23 @@ void printResults(int *arrSum, int cSum, int *arrDiff, int cDiff, int max1,
                   int max2);
 
 int main(void) {
-  int card1; // cardinalità del primo array
-  int card2; // cardinalità del secondo array
+  int card1;  // cardinalità del primo array
+  int card2;  // cardinalità del secondo array
 
-  int cSum;  // cardinalità dell'array contenente la somma di ogni elemento
-             // corrispondente di E1 ed E2
-  int cDiff; // cardinalità dell'array contenente la sottrazione di ogni
-             // elemento
+  int cSum;   // cardinalità dell'array contenente la somma di ogni elemento
+              // corrispondente di E1 ed E2
+  int cDiff;  // cardinalità dell'array contenente la sottrazione di ogni
+              // elemento
 
-  int array1[DIM]; // primo array di numeri interi
-  int array2[DIM]; // secondo array di numeri interi
+  int array1[DIM];  // primo array di numeri interi
+  int array2[DIM];  // secondo array di numeri interi
 
-  int sum[DIM];  // array contenente la somma di ogni elemento corrispondente
-                 // di E1 ed E2
-  int diff[DIM]; // array contenente la sottrazione di ogni elemento
-                 // corrispondente di E1 ed E2
-  int max1;      // massimo di E1
-  int max2;      // massimo di E2
+  int sum[DIM];     // array contenente la somma di ogni elemento corrispondente
+                    // di E1 ed E2
+  int diff[DIM];    // array contenente la sottrazione di ogni elemento
+                    // corrispondente di E1 ed E2
+  int max1;         // massimo di E1
+  int max2;         // massimo di E2
 
   // chiede all'utente di inserire la cardinalità dei due array
   card1 = getCard(&card1, "E1");
@@ -65,8 +65,8 @@ int main(void) {
 
 int getCard(int *c, char *name) {
   do {
-    printf_s("Inserisci la cardinalità di %s: ", name);
-    scanf_s("%d", c);
+    printf("Inserisci la cardinalità di %s: ", name);
+    scanf("%d", c);
   } while (*c < 0 || *c > DIM);
 
   return *c;
@@ -75,8 +75,8 @@ int getCard(int *c, char *name) {
 void populateArray(int *array, int c, char *name) {
   int i = 0;
   while (i < c) {
-    printf_s("Inserisci il valore %d di %s: ", i + 1, name);
-    scanf_s("%d", &array[i]);
+    printf("Inserisci il valore %d di %s: ", i + 1, name);
+    scanf("%d", &array[i]);
     i = i + 1;
   }
   return;
@@ -117,22 +117,22 @@ int calculateMax(int *array, int c) {
 void printResults(int *arrSum, int cSum, int *arrDiff, int cDiff, int max1,
                   int max2) {
   int i = 0;
-  printf_s("Somma: { ");
+  printf("Somma: { ");
   while (i < cSum) {
-    printf_s("%d ", arrSum[i]);
+    printf("%d ", arrSum[i]);
     i = i + 1;
   }
-  printf_s("}\n");
+  printf("}\n");
 
   i = 0;
-  printf_s("Differenza: { ");
+  printf("Differenza: { ");
   while (i < cDiff) {
-    printf_s("%d ", arrDiff[i]);
+    printf("%d ", arrDiff[i]);
     i = i + 1;
   }
-  printf_s("}\n");
-  printf_s("Massimo di E1: %d\n", max1);
-  printf_s("Massimo di E2: %d\n", max2);
+  printf("}\n");
+  printf("Massimo di E1: %d\n", max1);
+  printf("Massimo di E2: %d\n", max2);
 
   return;
 }

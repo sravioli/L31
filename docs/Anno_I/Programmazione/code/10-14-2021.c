@@ -16,13 +16,13 @@ int calcIntersection(int v[], int w[], int intersezione[], int n, int m);
 void printArray(int v[], int n, char name);
 
 int main(void) {
-  int n; // Cardinalità del primo insieme
-  int m; // Cardinalità del secondo insieme
-  int k; // Cardinalità dell'insieme intersezione
+  int n;                  // Cardinalità del primo insieme
+  int m;                  // Cardinalità del secondo insieme
+  int k;                  // Cardinalità dell'insieme intersezione
 
-  int v[DIM];            // Primo insieme
-  int w[DIM];            // Secondo insieme
-  int intersezione[DIM]; // Insieme intersezione
+  int v[DIM];             // Primo insieme
+  int w[DIM];             // Secondo insieme
+  int intersezione[DIM];  // Insieme intersezione
 
   // Input
   n = askCard(&n, 'v');
