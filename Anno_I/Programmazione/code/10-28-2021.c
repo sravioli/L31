@@ -22,17 +22,17 @@ int calcDifference(int arr1[], int arr2[], int diff[], int card1, int card2);
 void printArray(int array[], int card);
 
 int main(void) {
-  int card_I1;    // cardinalità dell'insieme I1
-  int card_I2;    // cardinalità dell'insieme I2
-  int card_intrs; // cardinalità dell'insieme intersezione
-  int card_unn;   // cardinalità dell'insieme unione
-  int card_diff;  // cardinalità dell'insieme differenza
+  int card_I1;     // cardinalità dell'insieme I1
+  int card_I2;     // cardinalità dell'insieme I2
+  int card_intrs;  // cardinalità dell'insieme intersezione
+  int card_unn;    // cardinalità dell'insieme unione
+  int card_diff;   // cardinalità dell'insieme differenza
 
-  int I1[DIM];    // insieme I1 di elementi interi
-  int I2[DIM];    // insieme I2 di elementi interi
-  int intrs[DIM]; // insieme intersezione di elementi interi
-  int unn[DIM];   // insieme unione di elementi interi
-  int diff[DIM];  // insieme differenza di elementi interi
+  int I1[DIM];     // insieme I1 di elementi interi
+  int I2[DIM];     // insieme I2 di elementi interi
+  int intrs[DIM];  // insieme intersezione di elementi interi
+  int unn[DIM];    // insieme unione di elementi interi
+  int diff[DIM];   // insieme differenza di elementi interi
 
   // leggere gli insiemi I1 e I2
   card_I1 = readCard(&card_I1);
@@ -101,7 +101,7 @@ int calcIntersection(int arr1[], int arr2[], int intrs[], int card1,
       j = j + 1;
     }
     i = i + 1;
-    j = 0; // ripristinare j per la prossima iterazione
+    j = 0;  // ripristinare j per la prossima iterazione
   }
   // restituire la cardinalità dell'insieme intersezione
   return k;

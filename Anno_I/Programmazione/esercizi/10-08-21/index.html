@@ -805,12 +805,12 @@
 
 <h1 id="esercizi-del-08102021">Esercizi del 08/10/2021<a class="headerlink" href="#esercizi-del-08102021" title="Link permanente">⚓︎</a></h1>
 <h2 id="esercizio-1-somma-di-due-numeri">Esercizio 1 – Somma di due numeri<a class="headerlink" href="#esercizio-1-somma-di-due-numeri" title="Link permanente">⚓︎</a></h2>
-<p>Dati due numeri interi <span class="arithmatex">\(a, b\)</span>, calcolarne la somma. Non è accettabile come
-soluzione <span class="arithmatex">\(a + b\)</span>.</p>
+<p>Dati due numeri interi <span class="arithmatex">\(a\)</span> e <span class="arithmatex">\(b\)</span>, calcolarne la somma. Non è accettabile
+come soluzione <span class="arithmatex">\(a + b\)</span>.</p>
 <p>Prendiamo, ad esempio, due numeri <span class="arithmatex">\(5, 7\)</span>. Siamo in grado di sommare questi due
-numeri utilizzando, ad esempio, le dita della mano e il risultato è <span class="arithmatex">\(12\)</span>. Come
-è stato ottenuto questo risultato? Incrementando di uno, tante volte il primo
-numero quante volte è il secondo numero, ovvero <span class="arithmatex">\(5 + 1 + \cdots + 1\)</span>.</p>
+numeri utilizzando le dita della mano e il risultato è <span class="arithmatex">\(12\)</span>. Come è stato
+ottenuto questo risultato? Incrementando di uno, tante volte il primo numero
+quante volte è il secondo numero, ovvero <span class="arithmatex">\(5 + 1 + \cdots + 1\)</span>.</p>
 <p>Il problema è stato appena risolto, è ora necessario descriverlo in modo tale
 che chiunque sia in grado di comprendere le operazioni che sono state appena
 effettuate, dunque:</p>
@@ -823,7 +823,7 @@ effettuate, dunque:</p>
 <a id="__codelineno-0-2" name="__codelineno-0-2"></a>Prendere il valore di b
 <a id="__codelineno-0-3" name="__codelineno-0-3"></a>Incrementare a di 1
 <a id="__codelineno-0-4" name="__codelineno-0-4"></a>Decrementare b di 1
-<a id="__codelineno-0-5" name="__codelineno-0-5"></a>SE b &gt; 0 ANDARE a 3
+<a id="__codelineno-0-5" name="__codelineno-0-5"></a>SE (b &gt; 0) ANDARE a 3
 <a id="__codelineno-0-6" name="__codelineno-0-6"></a>risultato := a
 </code></pre></div></td></tr></table></div>
 <p>Il precedente è un possibile metodo di risoluzione. È necessario notare che la
@@ -833,9 +833,9 @@ in maniera differente.</p>
 
 <div class="admonition question">
 <p class="admonition-title">Cosa accadrebbe nel caso in cui <span class="arithmatex">\(a, b \geq 0\)</span>?</p>
-<p>Cambiare il valore di <span class="arithmatex">\(a\)</span> non fa differenza, ma cambiando il valore di <span class="arithmatex">\(b\)</span>
-la soluzione potrebbe essere errata e quindi la procedura restituirebbe un
-risultato diverso da quello atteso.</p>
+<p>Cambiare il valore di <span class="arithmatex">\(a\)</span> non fa differenza, ma cambiando il valore di 
+<span class="arithmatex">\(b\)</span> la soluzione potrebbe essere errata e quindi la procedura 
+restituirebbe un risultato diverso da quello atteso.</p>
 </div>
 <!-- markdownlint-enable MD046-->
 
@@ -848,10 +848,10 @@ risultato diverso da quello atteso.</p>
 <span class="normal"><a href="#__codelineno-1-6">6</a></span>
 <span class="normal"><a href="#__codelineno-1-7">7</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a>Prendere il valore di a
 <a id="__codelineno-1-2" name="__codelineno-1-2"></a>Prendere il valore di b
-<a id="__codelineno-1-3" name="__codelineno-1-3"></a>SE b = 0 ANDARE a 7
+<a id="__codelineno-1-3" name="__codelineno-1-3"></a>SE (b = 0) ANDARE a 7
 <a id="__codelineno-1-4" name="__codelineno-1-4"></a>Incrementare a di 1
 <a id="__codelineno-1-5" name="__codelineno-1-5"></a>Decrementare b di 1
-<a id="__codelineno-1-6" name="__codelineno-1-6"></a>SE b &gt; 0 ANDARE a 4
+<a id="__codelineno-1-6" name="__codelineno-1-6"></a>SE (b &gt; 0) ANDARE a 4
 <a id="__codelineno-1-7" name="__codelineno-1-7"></a>risultato := a
 </code></pre></div></td></tr></table></div>
 <p>Anche questo procedimento non è scritto correttamente dato l'uso di <code>ANDARE</code>.</p>
@@ -861,10 +861,10 @@ risultato diverso da quello atteso.</p>
 <p class="admonition-title">Cosa succederebbe se <span class="arithmatex">\(b &lt; 0\)</span>?</p>
 <p>La procedura non restituirebbe alcun risultato.</p>
 </div>
-<p>Ogni vincolo specificato nei dati va sempre controllato e non va mai dato per
-scontato.</p>
 <!-- markdownlint-enable MD046-->
 
+<p>Ogni vincolo specificato nei dati va sempre controllato e non va mai dato per
+scontato.</p>
 <p>È necessario scrivere una procedura che non contenga alcun salto arbitrario,
 tenendo sempre conto del fatto che le operazioni vengono eseguite dall'alto
 verso il basso. Per effettuare dei salti, questi <strong>devono</strong> essere controllati
@@ -875,7 +875,7 @@ salti in maniera controllata, non lo sarà più.</p>
 <p>Dato un numero in base binaria <span class="arithmatex">\(a_{2}\)</span>, convertire lo stesso in base decimale
 <span class="arithmatex">\(a_{10}\)</span>. Dunque:</p>
 <div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Conversione, v1</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span>
-<span class="normal"><a href="#__codelineno-2-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a>Prendere la prima cifra di a₂
+<span class="normal"><a href="#__codelineno-2-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a>Prendere la prima cifra di a2
 <a id="__codelineno-2-2" name="__codelineno-2-2"></a>Moltiplicare questa per 2 elevato alla posizione della cifra
 </code></pre></div></td></tr></table></div>
 <p>Non è possibile scrivere <code>ANDARE a 1</code>, tantomeno di prendere la penultima cifra
@@ -888,7 +888,7 @@ necessario esplicitare quest'ultima tramite altri mezzi, dunque:</p>
 <span class="normal"><a href="#__codelineno-3-3">3</a></span>
 <span class="normal"><a href="#__codelineno-3-4">4</a></span>
 <span class="normal"><a href="#__codelineno-3-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1"></a>p := 0
-<a id="__codelineno-3-2" name="__codelineno-3-2"></a>Prendere la cifra di a₂ in posizione p
+<a id="__codelineno-3-2" name="__codelineno-3-2"></a>Prendere la cifra di a2 in posizione p
 <a id="__codelineno-3-3" name="__codelineno-3-3"></a>Moltiplicare questa per 2^p
 <a id="__codelineno-3-4" name="__codelineno-3-4"></a>Incrementare il valore di p di 1
 <a id="__codelineno-3-5" name="__codelineno-3-5"></a>ANDARE a 2
@@ -901,12 +901,12 @@ come lo si può determinare? Bisogna inserire un controllo.</p>
 <span class="normal"><a href="#__codelineno-4-3">3</a></span>
 <span class="normal"><a href="#__codelineno-4-4">4</a></span>
 <span class="normal"><a href="#__codelineno-4-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1"></a>p := 0
-<a id="__codelineno-4-2" name="__codelineno-4-2"></a>Prendere la cifra di a₂ in posizione p
+<a id="__codelineno-4-2" name="__codelineno-4-2"></a>Prendere la cifra di a2 in posizione p
 <a id="__codelineno-4-3" name="__codelineno-4-3"></a>Moltiplicare questa per 2^p
 <a id="__codelineno-4-4" name="__codelineno-4-4"></a>Incrementare il valore di p di 1
-<a id="__codelineno-4-5" name="__codelineno-4-5"></a>SE p &lt; C ANDARE a 2
+<a id="__codelineno-4-5" name="__codelineno-4-5"></a>SE (p &lt; C )ANDARE a 2
 </code></pre></div></td></tr></table></div>
-<p>Dove <span class="arithmatex">\(C\)</span> indica la lunghezza di <span class="arithmatex">\(a_{2}\)</span>.</p>
+<p>Dove <span class="arithmatex">\(C\)</span> indica la lunghezza di <span class="arithmatex">\(a_2\)</span>.</p>
 <p>Questa procedura rende l'idea di come risolvere il problema, ma non è ancora
 corretta poiché bisogna sommare le cifre ottenute al risultato finale.</p>
 <div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Conversione, v4</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-5-1">1</a></span>
@@ -915,11 +915,11 @@ corretta poiché bisogna sommare le cifre ottenute al risultato finale.</p>
 <span class="normal"><a href="#__codelineno-5-4">4</a></span>
 <span class="normal"><a href="#__codelineno-5-5">5</a></span>
 <span class="normal"><a href="#__codelineno-5-6">6</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1"></a>p := 0
-<a id="__codelineno-5-2" name="__codelineno-5-2"></a>Prendere la cifra di a₂ in posizione p
+<a id="__codelineno-5-2" name="__codelineno-5-2"></a>Prendere la cifra di a2 in posizione p
 <a id="__codelineno-5-3" name="__codelineno-5-3"></a>Moltiplicare questa per 2^p
 <a id="__codelineno-5-4" name="__codelineno-5-4"></a>Sommare questo valore al risultato
 <a id="__codelineno-5-5" name="__codelineno-5-5"></a>Incrementare il valore di p di 1
-<a id="__codelineno-5-6" name="__codelineno-5-6"></a>SE p &lt; C ANDARE a 2
+<a id="__codelineno-5-6" name="__codelineno-5-6"></a>SE (p &lt; C) ANDARE a 2
 </code></pre></div></td></tr></table></div>
 <p>Sono spesso necessarie delle informazioni che il problema non fornisce e
 spetta a chi trova la soluzione individuarle. Ad esempio, se sono presenti
@@ -931,7 +931,7 @@ degli stessi, anche se la traccia non lo esplicita.</p>
   <small>
     
       Ultimo aggiornamento:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">June 15, 2023</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">June 23, 2023</span>
       
         <br>
         Creata:

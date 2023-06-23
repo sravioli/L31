@@ -135,6 +135,6 @@ window.MathJax = {
 };
 
 document$.subscribe(() => {
-  MathJax.typesetPromise();
+  MathJax.typesetPromise()
 });
 

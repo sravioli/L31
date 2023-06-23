@@ -790,21 +790,21 @@
 
 
 <h1 id="esercizio-del-14102021">Esercizio del 14/10/2021<a class="headerlink" href="#esercizio-del-14102021" title="Link permanente">⚓︎</a></h1>
-<p>Dati due insiemi di elementi <span class="arithmatex">\(I_{1}\)</span> e <span class="arithmatex">\(I_{2}\)</span>, di cardinalità rispettivamente
+<p>Dati due insiemi di elementi <span class="arithmatex">\(I_1\)</span> e <span class="arithmatex">\(I_2\)</span>, di cardinalità rispettivamente
 <span class="arithmatex">\(n, m\)</span>, scrivere un algoritmo in grado di individuare gli elementi comuni ai
 due insiemi.</p>
 <p>Iniziamo ad elencare i dati.</p>
 <dl>
 <dt><strong>INPUT</strong></dt>
-<dd><span class="arithmatex">\(I_{1}\)</span> – insieme di elementi, insieme</dd>
-<dd><span class="arithmatex">\(n\)</span> – cardinalità di <span class="arithmatex">\(I_{1}\)</span>, appartiene a <span class="arithmatex">\(\N^\ast\)</span></dd>
-<dd><span class="arithmatex">\(I_{2}\)</span> – insieme di elementi, insieme</dd>
-<dd><span class="arithmatex">\(m\)</span> – cardinalità di <span class="arithmatex">\(I_{2}\)</span>, appartiene a <span class="arithmatex">\(\N^\ast\)</span></dd>
+<dd><span class="arithmatex">\(I_1\)</span> – insieme di elementi, insieme</dd>
+<dd><span class="arithmatex">\(n\)</span> – cardinalità di <span class="arithmatex">\(I_1\)</span>, appartiene a <span class="arithmatex">\(\N^\ast\)</span></dd>
+<dd><span class="arithmatex">\(I_2\)</span> – insieme di elementi, insieme</dd>
+<dd><span class="arithmatex">\(m\)</span> – cardinalità di <span class="arithmatex">\(I_2\)</span>, appartiene a <span class="arithmatex">\(\N^\ast\)</span></dd>
 <dt><strong>OUTPUT</strong></dt>
-<dd><span class="arithmatex">\(I_{3}\)</span> – insieme di elementi comuni a <span class="arithmatex">\(I_{1}\)</span> e <span class="arithmatex">\(I_{2}\)</span></dd>
+<dd><span class="arithmatex">\(I_3\)</span> – insieme di elementi comuni a <span class="arithmatex">\(I_1\)</span> e <span class="arithmatex">\(I_2\)</span></dd>
 </dl>
-<p>Consideriamo ad esempio <span class="arithmatex">\(I_{1} = \{3, 12, 7, 41, 35\}\)</span> e
-<span class="arithmatex">\(I_{2} = \{8, 5, 62, 7, 27, 56\}\)</span>, ne risulta che <span class="arithmatex">\(I_{3} = \{7\}\)</span>. Che
+<p>Consideriamo ad esempio <span class="arithmatex">\(I_1 = \{3, 12, 7, 41, 35\}\)</span> e
+<span class="arithmatex">\(I_2 = \{8, 5, 62, 7, 27, 56\}\)</span>, ne risulta che <span class="arithmatex">\(I_3 = \{7\}\)</span>. Che
 procedimento è stato utilizzato?</p>
 <div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bozza</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span>
 <span class="normal"><a href="#__codelineno-0-2">2</a></span>
@@ -827,18 +827,18 @@ procedimento è stato utilizzato?</p>
 <a id="__codelineno-1-2" name="__codelineno-1-2"></a>MENTRE (p &lt;= n)
 <a id="__codelineno-1-3" name="__codelineno-1-3"></a>  q := 1
 <a id="__codelineno-1-4" name="__codelineno-1-4"></a>  MENTRE (q &lt;= m)
-<a id="__codelineno-1-5" name="__codelineno-1-5"></a>    SE (elemento p-esimo di I1 = elemento q-esimo di I2)
-<a id="__codelineno-1-6" name="__codelineno-1-6"></a>      ALLORA inserire l&#39;elemento p-esimo di I1 in I3
-<a id="__codelineno-1-7" name="__codelineno-1-7"></a>    FINE
+<a id="__codelineno-1-5" name="__codelineno-1-5"></a>    SE (elemento p-esimo di I1 = elemento q-esimo di I2) ALLORA 
+<a id="__codelineno-1-6" name="__codelineno-1-6"></a>      inserire l&#39;elemento p-esimo di I1 in I3
+<a id="__codelineno-1-7" name="__codelineno-1-7"></a>    FINE SE
 <a id="__codelineno-1-8" name="__codelineno-1-8"></a>    q := q + 1
-<a id="__codelineno-1-9" name="__codelineno-1-9"></a>  FINE
+<a id="__codelineno-1-9" name="__codelineno-1-9"></a>  FINE MENTRE
 <a id="__codelineno-1-10" name="__codelineno-1-10"></a>  p := p + 1
-<a id="__codelineno-1-11" name="__codelineno-1-11"></a>FINE
+<a id="__codelineno-1-11" name="__codelineno-1-11"></a>FINE MENTRE
 </code></pre></div></td></tr></table></div>
 <p>Questa è una possibile soluzione. Iteriamo all'interno del primo insieme
 e confrontiamo il primo elemento di questo con tutti gli elementi dell'altro
 insieme, e così via. C'è tuttavia un errore, non viene specificato
-l'inserimento dell'elemento nell'insieme <span class="arithmatex">\(I_{3}\)</span>. Inoltre l'algoritmo potrebbe
+l'inserimento dell'elemento nell'insieme <span class="arithmatex">\(I_3\)</span>. Inoltre l'algoritmo potrebbe
 essere reso più efficiente interrompendo il ciclo dopo aver trovato il numero
 in comune. Dunque</p>
 <div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Algoritmo, v2</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1"> 1</a></span>
@@ -868,13 +868,13 @@ in comune. Dunque</p>
 <a id="__codelineno-2-13" name="__codelineno-2-13"></a>FINE
 </code></pre></div></td></tr></table></div>
 <p>Questo algoritmo però non funziona tutte le volte poiché nel caso in cui
-l'insieme <span class="arithmatex">\(I_{3}\)</span> sia vuoto, questo dovrebbe essere <span class="arithmatex">\(I_{3} = \emptyset\)</span> ma il
+l'insieme <span class="arithmatex">\(I_3\)</span> sia vuoto, questo dovrebbe essere <span class="arithmatex">\(I_3 = \emptyset\)</span> ma il
 valore di <span class="arithmatex">\(r\)</span> parte da uno e non da zero. Bisogna tener conto del fatto che la
 cardinalità è maggiorata di uno nel momento in cui sia necessario dare la
-soluzione, dunque <code>r - 1 = 0</code>, allora <span class="arithmatex">\(I_{3} = \emptyset\)</span>.</p>
+soluzione, dunque <code>r - 1 = 0</code>, allora <span class="arithmatex">\(I_3 = \emptyset\)</span>.</p>
 <p>Dopo aver letto la sezione sull'<a href="../../04_algebra_booleana/">Algebra Booleana</a>,
 è possibile scrivere un algoritmo migliore, che utilizza un valore booleano che
-indica se l'elemento è presente o meno nell'insieme <span class="arithmatex">\(I_{2}\)</span>.</p>
+indica se l'elemento è presente o meno nell'insieme <span class="arithmatex">\(I_2\)</span>.</p>
 <div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Algoritmo, v3</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-3-2"> 2</a></span>
 <span class="normal"><a href="#__codelineno-3-3"> 3</a></span>
@@ -906,8 +906,8 @@ indica se l'elemento è presente o meno nell'insieme <span class="arithmatex">\(
 <a id="__codelineno-3-15" name="__codelineno-3-15"></a>FINE
 </code></pre></div></td></tr></table></div>
 <h2 id="controllo">Controllo<a class="headerlink" href="#controllo" title="Link permanente">⚓︎</a></h2>
-<p>Controlliamo che l'algoritmo sia corretto. Siano <span class="arithmatex">\(I_{1} = \set{5, 10, 31}\)</span> e
-<span class="arithmatex">\(I_{2} = \set{7, 10}\)</span>, dunque <span class="arithmatex">\(I_{3} = \set{10}\)</span>. Inoltre <span class="arithmatex">\(n = 3\)</span> e <span class="arithmatex">\(m = 2\)</span>.</p>
+<p>Controlliamo che l'algoritmo sia corretto. Siano <span class="arithmatex">\(I_1 = \set{5, 10, 31}\)</span> e
+<span class="arithmatex">\(I_2 = \set{7, 10}\)</span>, dunque <span class="arithmatex">\(I_3 = \set{10}\)</span>. Inoltre <span class="arithmatex">\(n = 3\)</span> e <span class="arithmatex">\(m = 2\)</span>.</p>
 <!-- TODO! DA RIFARE MEGLIO -->
 
 <div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Controllo</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-1">1</a></span>
@@ -928,7 +928,7 @@ indica se l'elemento è presente o meno nell'insieme <span class="arithmatex">\(
   <small>
     
       Ultimo aggiornamento:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">June 15, 2023</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">June 23, 2023</span>
       
         <br>
         Creata:

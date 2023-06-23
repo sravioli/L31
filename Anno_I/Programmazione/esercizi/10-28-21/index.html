@@ -924,7 +924,7 @@
 
 
 <h1 id="esercizio-del-281021">Esercizio del 28/10/21<a class="headerlink" href="#esercizio-del-281021" title="Link permanente">⚓︎</a></h1>
-<p>Letti in input due insiemi di elementi <span class="arithmatex">\(I_{1}\)</span> e <span class="arithmatex">\(I_{2}\)</span>, di cardinalità
+<p>Letti in input due insiemi di elementi <span class="arithmatex">\(I_1\)</span> e <span class="arithmatex">\(I_2\)</span>, di cardinalità
 rispettivamente <span class="arithmatex">\(n\)</span> e <span class="arithmatex">\(m\)</span>, scrivere un algoritmo in grado di:</p>
 <ul>
 <li>individuare gli elementi comuni ai due insiemi;</li>
@@ -1034,14 +1034,14 @@ un albero di lavoro:</p>
 <p>Rappresenta il problema nella sua interezza.</p>
 <dl>
 <dt><strong>INPUT</strong>:</dt>
-<dd><span class="arithmatex">\(I_{1}\)</span> – primo insieme di <span class="arithmatex">\(n\)</span> elementi, insieme</dd>
-<dd><span class="arithmatex">\(I_{2}\)</span> – secondo insieme di <span class="arithmatex">\(m\)</span> elementi, insieme</dd>
-<dd><span class="arithmatex">\(n\)</span> – cardinalità di <span class="arithmatex">\(I_{1}\)</span>, con <span class="arithmatex">\(n \in \N^\ast\)</span></dd>
-<dd><span class="arithmatex">\(m\)</span> – cardinalità di <span class="arithmatex">\(I_{2}\)</span>, con <span class="arithmatex">\(m \in \N^\ast\)</span></dd>
+<dd><span class="arithmatex">\(I_1\)</span> – primo insieme di <span class="arithmatex">\(n\)</span> elementi, insieme</dd>
+<dd><span class="arithmatex">\(I_2\)</span> – secondo insieme di <span class="arithmatex">\(m\)</span> elementi, insieme</dd>
+<dd><span class="arithmatex">\(n\)</span> – cardinalità di <span class="arithmatex">\(I_1\)</span>, con <span class="arithmatex">\(n \in \N^\ast\)</span></dd>
+<dd><span class="arithmatex">\(m\)</span> – cardinalità di <span class="arithmatex">\(I_2\)</span>, con <span class="arithmatex">\(m \in \N^\ast\)</span></dd>
 <dt><strong>OUTPUT</strong>:</dt>
-<dd><code>intersezione</code> – insieme di elementi comuni a <span class="arithmatex">\(I_{1}\)</span> e <span class="arithmatex">\(I_{2}\)</span>, insieme</dd>
-<dd><code>unione</code> – insieme di elementi di <span class="arithmatex">\(I_{1}\)</span> e <span class="arithmatex">\(I_{2}\)</span> distinti, insieme</dd>
-<dd><code>differenza</code> – insieme di elementi di <span class="arithmatex">\(I_{1}\)</span> non comuni a <span class="arithmatex">\(I_{2}\)</span>, insieme</dd>
+<dd><code>intersezione</code> – insieme di elementi comuni a <span class="arithmatex">\(I_1\)</span> e <span class="arithmatex">\(I_2\)</span>, insieme</dd>
+<dd><code>unione</code> – insieme di elementi di <span class="arithmatex">\(I_1\)</span> e <span class="arithmatex">\(I_2\)</span> distinti, insieme</dd>
+<dd><code>differenza</code> – insieme di elementi di <span class="arithmatex">\(I_1\)</span> non comuni a <span class="arithmatex">\(I_2\)</span>, insieme</dd>
 </dl>
 <div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bozza</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-1">1</a></span>
 <span class="normal"><a href="#__codelineno-4-2">2</a></span>
@@ -1157,15 +1157,15 @@ della cardinalità degli insiemi viene trattato come un dato di lavoro. ??
 <h4 id="intersezione">Intersezione<a class="headerlink" href="#intersezione" title="Link permanente">⚓︎</a></h4>
 <dl>
 <dt><strong>INPUT</strong>:</dt>
-<dd><span class="arithmatex">\(I_{1}\)</span> – primo insieme di cui effettuare l'intersezione, insieme</dd>
-<dd><span class="arithmatex">\(I_{2}\)</span> – secondo insieme di cui effettuare l'intersezione, insieme</dd>
-<dd><span class="arithmatex">\(n\)</span> – cardinalità di <span class="arithmatex">\(I_{1}\)</span>, appartiene a <span class="arithmatex">\(\N^\ast\)</span></dd>
-<dd><span class="arithmatex">\(m\)</span> – cardinalità di <span class="arithmatex">\(I_{2}\)</span>, appartiene a <span class="arithmatex">\(\N^\ast\)</span></dd>
+<dd><span class="arithmatex">\(I_1\)</span> – primo insieme di cui effettuare l'intersezione, insieme</dd>
+<dd><span class="arithmatex">\(I_2\)</span> – secondo insieme di cui effettuare l'intersezione, insieme</dd>
+<dd><span class="arithmatex">\(n\)</span> – cardinalità di <span class="arithmatex">\(I_1\)</span>, appartiene a <span class="arithmatex">\(\N^\ast\)</span></dd>
+<dd><span class="arithmatex">\(m\)</span> – cardinalità di <span class="arithmatex">\(I_2\)</span>, appartiene a <span class="arithmatex">\(\N^\ast\)</span></dd>
 <dt><strong>OUTPUT</strong>:</dt>
-<dd><code>intersezione</code> – insieme risultante dell'intersezione tra <span class="arithmatex">\(I_{1}\)</span> e <span class="arithmatex">\(I_{2}\)</span>,
+<dd><code>intersezione</code> – insieme risultante dell'intersezione tra <span class="arithmatex">\(I_1\)</span> e <span class="arithmatex">\(I_2\)</span>,
 insieme</dd>
 <dt><strong>LAVORO</strong>:</dt>
-<dd><span class="arithmatex">\(p\)</span> – posizione degli elementi di <span class="arithmatex">\(I_{1}\)</span>, appartiene a <span class="arithmatex">\(\N^\ast\)</span></dd>
+<dd><span class="arithmatex">\(p\)</span> – posizione degli elementi di <span class="arithmatex">\(I_1\)</span>, appartiene a <span class="arithmatex">\(\N^\ast\)</span></dd>
 <dd><span class="arithmatex">\(q\)</span> – posizione degli elementi di <code>intersezione</code>, appartiene a <span class="arithmatex">\(\N^\ast\)</span></dd>
 <dd><code>trovato</code> – indica se un elemento è presente in un insieme, booleano</dd>
 </dl>
@@ -1199,15 +1199,15 @@ insieme</dd>
 <h4 id="differenza">Differenza<a class="headerlink" href="#differenza" title="Link permanente">⚓︎</a></h4>
 <dl>
 <dt><strong>INPUT</strong>:</dt>
-<dd><span class="arithmatex">\(I_{1}\)</span> – primo insieme di cui effettuare l'intersezione, insieme</dd>
-<dd><span class="arithmatex">\(I_{2}\)</span> – secondo insieme di cui effettuare l'intersezione, insieme</dd>
-<dd><span class="arithmatex">\(n\)</span> – cardinalità di <span class="arithmatex">\(I_{1}\)</span>, appartiene a <span class="arithmatex">\(\N^\ast\)</span></dd>
-<dd><span class="arithmatex">\(m\)</span> – cardinalità di <span class="arithmatex">\(I_{2}\)</span>, appartiene a <span class="arithmatex">\(\N^\ast\)</span></dd>
+<dd><span class="arithmatex">\(I_1\)</span> – primo insieme di cui effettuare l'intersezione, insieme</dd>
+<dd><span class="arithmatex">\(I_2\)</span> – secondo insieme di cui effettuare l'intersezione, insieme</dd>
+<dd><span class="arithmatex">\(n\)</span> – cardinalità di <span class="arithmatex">\(I_1\)</span>, appartiene a <span class="arithmatex">\(\N^\ast\)</span></dd>
+<dd><span class="arithmatex">\(m\)</span> – cardinalità di <span class="arithmatex">\(I_2\)</span>, appartiene a <span class="arithmatex">\(\N^\ast\)</span></dd>
 <dt><strong>OUTPUT</strong>:</dt>
-<dd><code>differenza</code> – insieme risultante dell'intersezione tra <span class="arithmatex">\(I_{1}\)</span> e <span class="arithmatex">\(I_{2}\)</span>,
+<dd><code>differenza</code> – insieme risultante dell'intersezione tra <span class="arithmatex">\(I_1\)</span> e <span class="arithmatex">\(I_2\)</span>,
 insieme</dd>
 <dt><strong>LAVORO</strong>:</dt>
-<dd><span class="arithmatex">\(p\)</span> – posizione degli elementi di <span class="arithmatex">\(I_{1}\)</span>, appartiene a <span class="arithmatex">\(\N^\ast\)</span></dd>
+<dd><span class="arithmatex">\(p\)</span> – posizione degli elementi di <span class="arithmatex">\(I_1\)</span>, appartiene a <span class="arithmatex">\(\N^\ast\)</span></dd>
 <dd><span class="arithmatex">\(q\)</span> – posizione degli elementi di <code>differenza</code>, appartiene a <span class="arithmatex">\(\N^\ast\)</span></dd>
 <dd><code>trovato</code> – indica se un elemento è presente in un insieme, booleano</dd>
 </dl>
@@ -1235,15 +1235,15 @@ insieme</dd>
 <h4 id="unione">Unione<a class="headerlink" href="#unione" title="Link permanente">⚓︎</a></h4>
 <dl>
 <dt><strong>INPUT</strong>:</dt>
-<dd><span class="arithmatex">\(I_{1}\)</span> – primo insieme di cui effettuare l'intersezione, insieme</dd>
-<dd><span class="arithmatex">\(I_{2}\)</span> – secondo insieme di cui effettuare l'intersezione, insieme</dd>
-<dd><span class="arithmatex">\(n\)</span> – cardinalità di <span class="arithmatex">\(I_{1}\)</span>, appartiene a <span class="arithmatex">\(\N^\ast\)</span></dd>
-<dd><span class="arithmatex">\(m\)</span> – cardinalità di <span class="arithmatex">\(I_{2}\)</span>, appartiene a <span class="arithmatex">\(\N^\ast\)</span></dd>
+<dd><span class="arithmatex">\(I_1\)</span> – primo insieme di cui effettuare l'intersezione, insieme</dd>
+<dd><span class="arithmatex">\(I_2\)</span> – secondo insieme di cui effettuare l'intersezione, insieme</dd>
+<dd><span class="arithmatex">\(n\)</span> – cardinalità di <span class="arithmatex">\(I_1\)</span>, appartiene a <span class="arithmatex">\(\N^\ast\)</span></dd>
+<dd><span class="arithmatex">\(m\)</span> – cardinalità di <span class="arithmatex">\(I_2\)</span>, appartiene a <span class="arithmatex">\(\N^\ast\)</span></dd>
 <dt><strong>OUTPUT</strong>:</dt>
-<dd><code>unione</code> – insieme risultante dell'intersezione tra <span class="arithmatex">\(I_{1}\)</span> e <span class="arithmatex">\(I_{2}\)</span>,
+<dd><code>unione</code> – insieme risultante dell'intersezione tra <span class="arithmatex">\(I_1\)</span> e <span class="arithmatex">\(I_2\)</span>,
 insieme</dd>
 <dt><strong>LAVORO</strong>:</dt>
-<dd><span class="arithmatex">\(p\)</span> – posizione degli elementi di <span class="arithmatex">\(I_{1}\)</span>, appartiene a <span class="arithmatex">\(\N^\ast\)</span></dd>
+<dd><span class="arithmatex">\(p\)</span> – posizione degli elementi di <span class="arithmatex">\(I_1\)</span>, appartiene a <span class="arithmatex">\(\N^\ast\)</span></dd>
 <dd><span class="arithmatex">\(q\)</span> – posizione degli elementi di <code>unione</code>, appartiene a <span class="arithmatex">\(\N^\ast\)</span></dd>
 <dd><code>trovato</code> – indica se un elemento è presente in un insieme, booleano</dd>
 </dl>
@@ -1281,9 +1281,9 @@ insieme</dd>
 <h3 id="stampare-risultati">Stampare risultati<a class="headerlink" href="#stampare-risultati" title="Link permanente">⚓︎</a></h3>
 <dl>
 <dt><strong>INPUT</strong>:</dt>
-<dd><code>intersezione</code> – insieme di elementi comuni a <span class="arithmatex">\(I_{1}\)</span> e <span class="arithmatex">\(I_{2}\)</span>, insieme</dd>
-<dd><code>differenza</code> – insieme di elementi di <span class="arithmatex">\(I_{1}\)</span> non comuni a <span class="arithmatex">\(I_{2}\)</span>, insieme</dd>
-<dd><code>unione</code> – insieme di elementi di <span class="arithmatex">\(I_{1}\)</span> e <span class="arithmatex">\(I_{2}\)</span> distinti, insieme</dd>
+<dd><code>intersezione</code> – insieme di elementi comuni a <span class="arithmatex">\(I_1\)</span> e <span class="arithmatex">\(I_2\)</span>, insieme</dd>
+<dd><code>differenza</code> – insieme di elementi di <span class="arithmatex">\(I_1\)</span> non comuni a <span class="arithmatex">\(I_2\)</span>, insieme</dd>
+<dd><code>unione</code> – insieme di elementi di <span class="arithmatex">\(I_1\)</span> e <span class="arithmatex">\(I_2\)</span> distinti, insieme</dd>
 <dd><code>cardinalitàIntersezione</code> – numero di elementi di <code>intersezione</code>, appartiene a <span class="arithmatex">\(\N^\ast\)</span></dd>
 <dd><code>cardinalitàDifferenza</code> – numero di elementi di <code>differenza</code>, appartiene a <span class="arithmatex">\(\N^\ast\)</span></dd>
 <dd><code>cardinalitàUnione</code> – numero di elementi di <code>unione</code>, appartiene a <span class="arithmatex">\(\N^\ast\)</span></dd>
@@ -1400,7 +1400,7 @@ più efficiente<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup
   <small>
     
       Ultimo aggiornamento:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">June 15, 2023</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">June 23, 2023</span>
       
         <br>
         Creata:
