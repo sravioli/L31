@@ -181,7 +181,7 @@ extra:
     - icon: fontawesome/brands/instagram
       link: https://www.instagram.com/who.dat.boy___
 
-extra_css: [overrides/styles/font.css, overrides/styles/syntax.css]
+extra_css: [overrides/stylesheets/font.css, overrides/styles/admonitions.css]
 
 extra_javascript:
   - overrides/javascripts/mappings.js
