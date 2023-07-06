@@ -2,6 +2,19 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## [0.1.5](https://github.com/sRavioli/L31/compare/0.1.0..0.1.5) - 2023-07-06
+#### Bug Fixes
+- **(rename)** rename `styles/` folder to `stylesheets/` - ([0d4a6c7](https://github.com/sRavioli/L31/commit/0d4a6c7047ba322a7ffd5ac4373f8269a769f3c4)) - [@sRavioli](https://github.com/sRavioli)
+- **(rename)** rename `styles/` folder to `stylesheets/` - ([e7565fd](https://github.com/sRavioli/L31/commit/e7565fd2d091ba8d56cdfe039ce503c4c63f5d7d)) - [@sRavioli](https://github.com/sRavioli)
+#### Features
+- **(github)** add auto release workflow - ([407045a](https://github.com/sRavioli/L31/commit/407045aac55a0bcbb0c8bbd997e72274cd22e5a8)) - [@sRavioli](https://github.com/sRavioli)
+- **(readme)** add ci badge - ([1784958](https://github.com/sRavioli/L31/commit/17849589a1d5bcaeff9ea06add146ee96127baef)) - [@sRavioli](https://github.com/sRavioli)
+- **(stylesheets)** add new admonition types - ([14b4e4c](https://github.com/sRavioli/L31/commit/14b4e4c64bb443e3ccd04a58832523f4c13181ee)) - [@sRavioli](https://github.com/sRavioli)
+#### Hotfixes
+- **(mkdocs)** load correct css files - ([b7fa068](https://github.com/sRavioli/L31/commit/b7fa068b18c16c5480e51bfce10558d49ab177d9)) - [@sRavioli](https://github.com/sRavioli)
+
+- - -
+
 ## [0.1.0](https://github.com/sRavioli/L31/compare/30b13da1add0640998278e003acdf3d9900a87c3..0.1.0) - 2023-07-03
 #### Bug Fixes
 - **(docs)** remove linter warnings - ([e0ad88a](https://github.com/sRavioli/L31/commit/e0ad88af102bd9f034dc9cb5993ecd2286469403)) - [@sRavioli](https://github.com/sRavioli)
