@@ -1,10 +1,8 @@
-from_latest_tag = false
-ignore_merge_commits = false
-branch_whitelist = []
+# A list of glob patterns describing branches on which semver bump are allowed
+branch_whitelist = ["main"]
+ignore_merge_commits = true
 pre_bump_hooks = []
-post_bump_hooks = []
-pre_package_bump_hooks = []
-post_package_bump_hooks = []
+post_bump_hooks = ["git push", "git push origin {{version}}"]
 
 [commit_types]
 hotfix = { changelog_title = "Hotfixes" }
