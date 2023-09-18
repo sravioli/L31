@@ -2,6 +2,23 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## [0.1.6](https://github.com/sRavioli/L31/compare/0.1.5..0.1.6) - 2023-09-18
+#### Bug Fixes
+- **(mathjax)** fix Grammar syntax, add prodto command - ([b62fa66](https://github.com/sRavioli/L31/commit/b62fa660d6939a20df5030a08adf2adf0dd36384)) - [@sRavioli](https://github.com/sRavioli)
+#### Features
+- **(docs)** add index for AESO - ([fc2188b](https://github.com/sRavioli/L31/commit/fc2188b806635eba38a4ef924151917a82bc1f44)) - [@sRavioli](https://github.com/sRavioli)
+- **(docs)** update Anno_I index - ([479045e](https://github.com/sRavioli/L31/commit/479045ef25b293a8c32a0c12fde426ceff8f1371)) - [@sRavioli](https://github.com/sRavioli)
+- **(glossary)** add BNF meaning to glossary - ([4d9ab93](https://github.com/sRavioli/L31/commit/4d9ab937bca3f5edd40efa9576fb0fafe7a28360)) - [@sRavioli](https://github.com/sRavioli)
+- complete chapter 03 for Linguaggi - ([c5d6bf6](https://github.com/sRavioli/L31/commit/c5d6bf68b00416f0d17497b727498d8f855b37ae)) - [@sRavioli](https://github.com/sRavioli)
+- add Linguaggi notes - ([bbc42bc](https://github.com/sRavioli/L31/commit/bbc42bcfb02ee44ec7a8ff0617626fd384461326)) - [@sRavioli](https://github.com/sRavioli)
+#### Miscellaneous Chores
+- **(deps)** bump gitpython from 3.1.31 to 3.1.35 - ([ce6e575](https://github.com/sRavioli/L31/commit/ce6e57524945107d82020dbde0c6135de61d610e)) - dependabot[bot]
+- **(deps)** bump gitpython from 3.1.31 to 3.1.34 - ([517c0ad](https://github.com/sRavioli/L31/commit/517c0ad3ae61c58d9d5c64e8feca6e792751055d)) - dependabot[bot]
+- **(deps)** bump certifi from 2023.5.7 to 2023.7.22 - ([9b18cb9](https://github.com/sRavioli/L31/commit/9b18cb94fb6899de335ea1dabcdbb6752bbd65cf)) - dependabot[bot]
+- update goose game - ([6458b8a](https://github.com/sRavioli/L31/commit/6458b8a583d00c2819ea98fce2b63545b621eecc)) - [@sRavioli](https://github.com/sRavioli)
+
+- - -
+
 ## [0.1.5](https://github.com/sRavioli/L31/compare/0.1.0..0.1.5) - 2023-07-06
 #### Bug Fixes
 - **(rename)** rename `styles/` folder to `stylesheets/` - ([0d4a6c7](https://github.com/sRavioli/L31/commit/0d4a6c7047ba322a7ffd5ac4373f8269a769f3c4)) - [@sRavioli](https://github.com/sRavioli)
