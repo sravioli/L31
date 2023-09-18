@@ -1,6 +1,7 @@
 *[ALU]: Arithmetic Logic Unit
 *[ASCII]: American Standard Code for Information Interchange
 *[BIT]: Binary Digit
+*[BNF]: Backus-Naur Form
 *[CD]: Compact Disc
 *[CISC]: Complex Instruction Set Computer
 *[CNF]: Conjunctive Normal Form
