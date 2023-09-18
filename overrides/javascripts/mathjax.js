@@ -75,8 +75,8 @@ window.MathJax = {
       XuV: "{X \\cup V}",
       XuVplus: "{{(X \\cup V)}^+}",
       XuVast: "{{(X \\cup V)}^\\ast}",
-      grammar: "{G = \\set{X,\\ V,\\ S,\\ P}}",
-      supto: ["{\\overset{\\substack{#1}}{\\to}}", 1],
+      grammar: "{G = \\left(X,\\ V,\\ S,\\ P\\right)}",
+      supto: ["\\overset{\\substack{#1}}{\\to}", 1],
       sup: ["{\\overset{\\substack{#2}}{#1}}", 2],
 
       ceil: ["{\\mathopen\\lceil #1 \\mathclose\\rceil}", 1],
@@ -119,6 +119,7 @@ window.MathJax = {
       ifrac: ["{^{#1} \\!/ _{\\!#2}}", 2],
       oneton: ["{#2_1,\\, #2_2, \\,\\dotsc,\\, #2_{#1}}", 2, "n" ],
       sumton: ["{#2_1 + #2_2 +\\dotsb+ #2_{#1}}", 2, "n" ],
+      prodto: ["{#2 \\to #3_1 \\mid #3_2 \\mid \\dots \\mid #3_{#1}}", 3, "n"],
 
       // logical operators
       lxor: "\\veebar",

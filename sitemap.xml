@@ -2,192 +2,222 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://sravioli.github.io/L31/</loc>
-         <lastmod>2023-09-13</lastmod>
+         <lastmod>2023-09-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sravioli.github.io/L31/Anno_I/</loc>
-         <lastmod>2023-09-13</lastmod>
+         <lastmod>2023-09-18</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://sravioli.github.io/L31/Anno_I/AESO/</loc>
+         <lastmod>2023-09-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sravioli.github.io/L31/Anno_I/AESO/AE1_dati_rappresentazione/</loc>
-         <lastmod>2023-09-13</lastmod>
+         <lastmod>2023-09-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sravioli.github.io/L31/Anno_I/AESO/AE4_expr_booleane_karnaugh/</loc>
-         <lastmod>2023-09-13</lastmod>
+         <lastmod>2023-09-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sravioli.github.io/L31/Anno_I/AESO/AE5_istruzioni_indirizzamento/</loc>
-         <lastmod>2023-09-13</lastmod>
+         <lastmod>2023-09-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sravioli.github.io/L31/Anno_I/AESO/SO1_so_processi_scheduling/</loc>
-         <lastmod>2023-09-13</lastmod>
+         <lastmod>2023-09-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sravioli.github.io/L31/Anno_I/AESO/SO2_thread_smp_microkernel/</loc>
-         <lastmod>2023-09-13</lastmod>
+         <lastmod>2023-09-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sravioli.github.io/L31/Anno_I/AESO/SO3_gestione_risorse_problemi/</loc>
-         <lastmod>2023-09-13</lastmod>
+         <lastmod>2023-09-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sravioli.github.io/L31/Anno_I/AESO/SO4_gestione_memoria/</loc>
-         <lastmod>2023-09-13</lastmod>
+         <lastmod>2023-09-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sravioli.github.io/L31/Anno_I/AESO/SO5_file_system/</loc>
-         <lastmod>2023-09-13</lastmod>
+         <lastmod>2023-09-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sravioli.github.io/L31/Anno_I/Laboratorio_di_Informatica/</loc>
-         <lastmod>2023-09-13</lastmod>
+         <lastmod>2023-09-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sravioli.github.io/L31/Anno_I/Laboratorio_di_Informatica/00_test_debugging/</loc>
-         <lastmod>2023-09-13</lastmod>
+         <lastmod>2023-09-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sravioli.github.io/L31/Anno_I/Laboratorio_di_Informatica/notes/03-02-2023/</loc>
-         <lastmod>2023-09-13</lastmod>
+         <lastmod>2023-09-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sravioli.github.io/L31/Anno_I/Laboratorio_di_Informatica/notes/03-08-2023/</loc>
-         <lastmod>2023-09-13</lastmod>
+         <lastmod>2023-09-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sravioli.github.io/L31/Anno_I/Laboratorio_di_Informatica/notes/03-09-2023/</loc>
-         <lastmod>2023-09-13</lastmod>
+         <lastmod>2023-09-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sravioli.github.io/L31/Anno_I/Laboratorio_di_Informatica/notes/03-16-2023/</loc>
-         <lastmod>2023-09-13</lastmod>
+         <lastmod>2023-09-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sravioli.github.io/L31/Anno_I/Laboratorio_di_Informatica/notes/03-23-2023/</loc>
-         <lastmod>2023-09-13</lastmod>
+         <lastmod>2023-09-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sravioli.github.io/L31/Anno_I/Laboratorio_di_Informatica/notes/03-29-2023/</loc>
-         <lastmod>2023-09-13</lastmod>
+         <lastmod>2023-09-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sravioli.github.io/L31/Anno_I/Laboratorio_di_Informatica/notes/03-30-2023/</loc>
-         <lastmod>2023-09-13</lastmod>
+         <lastmod>2023-09-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sravioli.github.io/L31/Anno_I/Laboratorio_di_Informatica/notes/04-20-2023/</loc>
-         <lastmod>2023-09-13</lastmod>
+         <lastmod>2023-09-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sravioli.github.io/L31/Anno_I/Laboratorio_di_Informatica/notes/04-26-2023/</loc>
-         <lastmod>2023-09-13</lastmod>
+         <lastmod>2023-09-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sravioli.github.io/L31/Anno_I/Laboratorio_di_Informatica/notes/05-10-23/</loc>
-         <lastmod>2023-09-13</lastmod>
+         <lastmod>2023-09-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sravioli.github.io/L31/Anno_I/Laboratorio_di_Informatica/notes/consegna0/</loc>
-         <lastmod>2023-09-13</lastmod>
+         <lastmod>2023-09-18</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://sravioli.github.io/L31/Anno_I/Linguaggi_di_Programmazione/</loc>
+         <lastmod>2023-09-18</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://sravioli.github.io/L31/Anno_I/Linguaggi_di_Programmazione/00_introduzione_linguaggi/</loc>
+         <lastmod>2023-09-18</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://sravioli.github.io/L31/Anno_I/Linguaggi_di_Programmazione/01_intro_teoria_linguaggi_formali/</loc>
+         <lastmod>2023-09-18</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://sravioli.github.io/L31/Anno_I/Linguaggi_di_Programmazione/02_grammatiche_linguaggi/</loc>
+         <lastmod>2023-09-18</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://sravioli.github.io/L31/Anno_I/Linguaggi_di_Programmazione/03_linguaggi_CF_e_non/</loc>
+         <lastmod>2023-09-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sravioli.github.io/L31/Anno_I/Programmazione/</loc>
-         <lastmod>2023-09-13</lastmod>
+         <lastmod>2023-09-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sravioli.github.io/L31/Anno_I/Programmazione/00_introduzione_ai_calcolatori/</loc>
-         <lastmod>2023-09-13</lastmod>
+         <lastmod>2023-09-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sravioli.github.io/L31/Anno_I/Programmazione/01_problem_solving/</loc>
-         <lastmod>2023-09-13</lastmod>
+         <lastmod>2023-09-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sravioli.github.io/L31/Anno_I/Programmazione/02_algoritmo_euclide/</loc>
-         <lastmod>2023-09-13</lastmod>
+         <lastmod>2023-09-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sravioli.github.io/L31/Anno_I/Programmazione/03_notazione_lineare/</loc>
-         <lastmod>2023-09-13</lastmod>
+         <lastmod>2023-09-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sravioli.github.io/L31/Anno_I/Programmazione/04_algebra_booleana/</loc>
-         <lastmod>2023-09-13</lastmod>
+         <lastmod>2023-09-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sravioli.github.io/L31/Anno_I/Programmazione/05_dati/</loc>
-         <lastmod>2023-09-13</lastmod>
+         <lastmod>2023-09-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sravioli.github.io/L31/Anno_I/Programmazione/06_metodologia_TopDown/</loc>
-         <lastmod>2023-09-13</lastmod>
+         <lastmod>2023-09-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sravioli.github.io/L31/Anno_I/Programmazione/07_funzioni_procedure/</loc>
-         <lastmod>2023-09-13</lastmod>
+         <lastmod>2023-09-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sravioli.github.io/L31/Anno_I/Programmazione/08_tipi_semplici/</loc>
-         <lastmod>2023-09-13</lastmod>
+         <lastmod>2023-09-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sravioli.github.io/L31/Anno_I/Programmazione/10_array/</loc>
-         <lastmod>2023-09-13</lastmod>
+         <lastmod>2023-09-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sravioli.github.io/L31/Anno_I/Programmazione/esercizi/10-08-21/</loc>
-         <lastmod>2023-09-13</lastmod>
+         <lastmod>2023-09-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sravioli.github.io/L31/Anno_I/Programmazione/esercizi/10-14-21/</loc>
-         <lastmod>2023-09-13</lastmod>
+         <lastmod>2023-09-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sravioli.github.io/L31/Anno_I/Programmazione/esercizi/10-21-21/</loc>
-         <lastmod>2023-09-13</lastmod>
+         <lastmod>2023-09-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sravioli.github.io/L31/Anno_I/Programmazione/esercizi/10-28-21/</loc>
-         <lastmod>2023-09-13</lastmod>
+         <lastmod>2023-09-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
